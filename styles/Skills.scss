@@ -1,0 +1,22 @@
+.skill-container {
+    height: 100vh;
+}
+
+.skill-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill-content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.skill-design-container {
+    display: flex;
+}

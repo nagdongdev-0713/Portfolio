@@ -1,0 +1,33 @@
+.cav-container {
+    z-index: 0;
+    // top: -6vh;
+    height: 92vh;
+    // position: relative;
+    // position: absolute;
+    // top: 50%;
+    // left: 50%;
+    // transform: translate(-50%, -50%);
+}
+
+.cav-wrapper {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cav-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 40px;
+    font-weight: 300;
+    line-height: 1.5;
+    letter-spacing: -0.02em;
+    color: #2E2E2E;
+}
+
+.cav-bold {
+    font-weight: 700;
+}
+
+@import './Variable';

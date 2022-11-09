@@ -1,0 +1,108 @@
+.am-container {
+  height: 70vh;
+  line-height: 1.7;
+}
+
+.am-area {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.am-content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.am-about {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.iconsize {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.am-infos {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.am-infos-two {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.am-stroke {
+  width: 1px;
+  height: 100px;
+}
+
+.am-infos-icontext {
+  display: flex;
+  align-items: center;
+}
+
+.am-infos-edu {
+  display: flex;
+  align-items: center;
+}
+
+.am-education {
+  display: flex;
+  flex-direction: column;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    z-index: -1;
+  }
+  to {
+    opacity: 1;
+    z-index: -1;
+  }
+}
+
+.elem-visible {
+  animation-name: fadeIn;
+  animation-duration: 0.6s;
+  animation-timing-function: linear;
+}
+
+.elem-invisible {
+  opacity: 0%;
+}
+
+.subtitle-text {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.am-infos-icontext:nth-child(1) > .iconsize > .subtitle-text {
+  font-size: 34px;
+}
+
+.none {
+  display: none;
+}
