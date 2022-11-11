@@ -6,26 +6,37 @@ import Canvas from '../components/Canvas'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
-import React from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 
 type MyComponentProps = {
     children: React.ReactNode;
+    prop: number;
 }
 
 const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
-    const { ref: myRef, inView: ElementVisible } = useInView(); // intersection Observe
+    // const { ref: myRef, inView: ElementVisible } = useInView(); // intersection Observe
+    const [canvas, setCanvas] = useState<number>();
+    const canvasRef = useRef<HTMLDivElement | null>(null);
+    useEffect(() => {
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            console.log(entry)
+            setCanvas(entry.boundingClientRect.height)
+        });
+        observer.observe(canvasRef.current as HTMLDivElement);
+    }, [])
 
     return (
         <>
-
-            <Mouse />
-
+            {/* <Mouse /> */}
             <div className="nav-sticky">
                 <Navbar />
             </div>
-            <Canvas />
+            <section ref={canvasRef} className="section-00">
+                <Canvas />
+            </section>
             <section className="section-01">
-                <AboutMe />
+                <AboutMe canvas={canvas} />
             </section>
             <section className="section-02">
                 <Skills />

@@ -11,9 +11,10 @@ html {
 body {
   margin-right: auto;
   margin-left: auto;
-  cursor: none;
+  // cursor: none;
   -webkit-font-smoothing: antialiased;
   user-select: none;
+  overflow-x: hidden;
 }
 
 html,

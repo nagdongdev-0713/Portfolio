@@ -34,7 +34,7 @@ const Cursor = ({
         };
     });
 
-    const styles = {
+    const styleContent: any = {
         ...base,
         animation: pulse ? "pulse 2s infinite" : null,
         "background-color": hollow ? "transparent" : color,
@@ -44,28 +44,35 @@ const Cursor = ({
         top: y,
         left: x,
         "transition-timing-function": easing,
-        opacity: opacity,
-        "transition-duration": duration + "s"
     };
 
+    const styles = {
+        ...styleContent,
+        opacity: opacity,
+        "transition-duration": duration + "s"
+    }
     const styles2 = {
-        ...base,
-        animation: pulse ? "pulse 2s infinite" : null,
-        "background-color": hollow ? "transparent" : color,
-        border: hollow ? "1px solid " + color : null,
-        width: size + "px",
-        height: size + "px",
-        top: y,
-        left: x,
-        "transition-timing-function": easing,
+        ...styleContent,
         opacity: 0.6,
         "transition-duration": 0.3 + "s"
-    };
+    }
+    const styles3 = {
+        ...styleContent,
+        opacity: 0.4,
+        "transition-duration": 0.4 + "s"
+    }
+    const styles4 = {
+        ...styleContent,
+        opacity: 0.2,
+        "transition-duration": 0.47 + "s"
+    }
 
     return (
         <>
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles} />
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles2} />
+            <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles3} />
+            <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles4} />
             {/* <div id="cursor" {...rest} style={styles} /> */}
             {/* svg 두세개 더 추가해서 잔상 넣기 */}
         </>

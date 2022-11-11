@@ -5,7 +5,7 @@ const Navbar = () => {
 
   // Nav색 변경을 위한 함수
   const setFixed = () => {
-    if (window.scrollY >= 100) {
+    if (window.scrollY >= 85) {
       setFix(true);
     } else {
       setFix(false);

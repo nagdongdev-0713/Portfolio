@@ -1,9 +1,11 @@
-import { useEffect, useRef, useState } from 'react';
+import { CSSProperties, useEffect, useRef, useState } from 'react';
 
-const AboutMe = () => {
-
+const AboutMe = ({ canvas }: any) => {
     const [ElementVisible, setElementVisible] = useState<boolean>();
-    const myRef = useRef<HTMLInputElement | null>(null);
+    const [scrollEft, setScrollEft] = useState<any>();
+    const [amAnime, setAmAnime] = useState<number>(0);
+    const myRef = useRef<HTMLDivElement | null>(null);
+    const aboutMe = useRef<HTMLDivElement | null>(null)
     useEffect(() => {
         // 컨텐츠 Opacity조정을 위함
         const observer = new IntersectionObserver((entries) => {
@@ -11,19 +13,32 @@ const AboutMe = () => {
             // console.log('entry', entry);
             // 위에 찍혔던 boolean인 isIntersecting값이 들어감
             setElementVisible(entry.isIntersecting)
+            setScrollEft(entry.boundingClientRect.y)
         });
-        observer.observe(myRef.current as HTMLInputElement);
+        observer.observe(myRef.current as HTMLDivElement);
+        observer.observe(aboutMe.current as HTMLDivElement);
     }, [])
 
+    const abScroll = () => {
+        setAmAnime(window.scrollY - canvas)
+        console.log(amAnime)
+    }
+
+    useEffect(() => {
+        window.addEventListener("scroll", abScroll)
+        return () => {
+            window.removeEventListener("scroll", abScroll);
+        }
+    })
 
 
     return (
         <div className="am-container">
             <div className="am-area container__default">
                 <div className="am-wrapper" ref={myRef}>
-                    <div className={ElementVisible ? 'elem-visible am-content' : 'elem-invisible'}>
-                        <div className="title-padding">
-                            <p>About me</p>
+                    <div className={ElementVisible ? 'elem-visible am-content relative' : 'elem-invisible am-content relative'}>
+                        <div ref={aboutMe} className="am-aboutme">
+                            <div style={{ transform: `translateX(${amAnime}px)` }}>About me</div>
                         </div>
                         <div className="am-about">
                             <div className="am-infos">
@@ -74,14 +89,14 @@ const AboutMe = () => {
                                     </div>
                                 </div>
 
-                                <div className='am-infos-icontext'>
+                                {/* <div className='am-infos-icontext'>
                                     <div className='iconsize'>
                                         <p className="subtitle-text bi bi-stack"></p>
                                     </div>
                                     <div className="am-education">
                                         <p>Blue Award 상품문화디자인 국제공모전 특선(2019)</p>
                                     </div>
-                                </div>
+                                </div> */}
                             </div>
                         </div>
                     </div>

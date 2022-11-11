@@ -16,7 +16,6 @@ const Skills = () => {
                     <div>
                         <p>Programming</p>
                         <div>
-
                             <Image
                                 src={HTML5_img}
                                 alt="HTML5"

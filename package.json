@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@react-spring/types": "^9.5.5",
     "@types/react-slick": "^0.23.10",
     "bootstrap-icons": "^1.9.1",
     "next": "13.0.0",
@@ -16,7 +17,9 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "react-intersection-observer": "^9.4.0",
+    "react-scroll-motion": "^0.3.0",
     "react-slick": "^0.29.0",
+    "react-spring": "^9.5.5",
     "slick-carousel": "^1.8.1",
     "swiper": "^8.4.4"
   },
