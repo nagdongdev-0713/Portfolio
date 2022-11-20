@@ -1,22 +1,55 @@
 .skill-container {
-    height: 100vh;
+  height: 100vh;
 }
 
 .skill-wrapper {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .skill-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.skill-title {
+  font-size: 20px;
+  padding-bottom: 20px;
 }
 
 .skill-design-container {
-    display: flex;
+  display: flex;
+}
+
+.skill-img-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.skill-img {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.skill-skilltext {
+  display: flex;
+  width: 100px;
+  word-break: normal;
+  padding-top: 10px;
+  justify-content: center;
+}
+
+.skill-img-height {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  margin-top: 10px;
 }

@@ -20,7 +20,7 @@ const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            console.log(entry)
+            // console.log(entry)
             setCanvas(entry.boundingClientRect.height)
         });
         observer.observe(canvasRef.current as HTMLDivElement);

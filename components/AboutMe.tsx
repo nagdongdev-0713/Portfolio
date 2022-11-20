@@ -1,4 +1,4 @@
-import { CSSProperties, useEffect, useRef, useState } from 'react';
+import { CSSProperties, useCallback, useEffect, useRef, useState } from 'react';
 
 const AboutMe = ({ canvas }: any) => {
     const [ElementVisible, setElementVisible] = useState<boolean>();
@@ -19,10 +19,9 @@ const AboutMe = ({ canvas }: any) => {
         observer.observe(aboutMe.current as HTMLDivElement);
     }, [])
 
-    const abScroll = () => {
-        setAmAnime(window.scrollY - canvas)
-        console.log(amAnime)
-    }
+    const abScroll = useCallback(() => {
+        setAmAnime((window.scrollY - canvas) / 6)
+    }, [canvas])
 
     useEffect(() => {
         window.addEventListener("scroll", abScroll)
