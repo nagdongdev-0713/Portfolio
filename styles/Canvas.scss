@@ -25,4 +25,43 @@
   font-weight: 700;
 }
 
+.cav-img-container {
+  width: 265px;
+  height: 265px;
+  background-color: grey;
+}
+
+.cav-photo {
+  height: 100%;
+  width: 265px;
+}
+
+@media (max-width: 1200px) {
+  .cav-wrapper {
+    padding: 0 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .cav-wrapper {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+  }
+  .cav-img-container {
+    margin-bottom: 30px;
+  }
+  .cav-content {
+    margin: 0 30px;
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+    text-align: center;
+  }
+  .cav-p {
+    word-break: keep-all;
+  }
+}
+
 @import "./Variable";

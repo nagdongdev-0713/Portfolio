@@ -1,8 +1,7 @@
-import { CSSProperties, useCallback, useEffect, useRef, useState } from 'react';
+import { useCallback, useEffect, useRef, useState } from 'react';
 
 const AboutMe = ({ canvas }: any) => {
     const [ElementVisible, setElementVisible] = useState<boolean>();
-    const [scrollEft, setScrollEft] = useState<any>();
     const [amAnime, setAmAnime] = useState<number>(0);
     const myRef = useRef<HTMLDivElement | null>(null);
     const aboutMe = useRef<HTMLDivElement | null>(null)
@@ -13,14 +12,14 @@ const AboutMe = ({ canvas }: any) => {
             // console.log('entry', entry);
             // 위에 찍혔던 boolean인 isIntersecting값이 들어감
             setElementVisible(entry.isIntersecting)
-            setScrollEft(entry.boundingClientRect.y)
         });
         observer.observe(myRef.current as HTMLDivElement);
-        observer.observe(aboutMe.current as HTMLDivElement);
+        // aboutMe를 찍으면 둘 다 인식이 돼버려 isIntersecting이 꼬인다
+        // observer.observe(aboutMe.current as HTMLDivElement);
     }, [])
 
     const abScroll = useCallback(() => {
-        setAmAnime((window.scrollY - canvas) / 6)
+        setAmAnime((window.scrollY - canvas) / 4)
     }, [canvas])
 
     useEffect(() => {
