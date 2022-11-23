@@ -23,7 +23,6 @@ const Navbar = () => {
     window.scrollTo(x, y);
   }
 
-
   return (
     <div className={fix ? 'nav__container__fixed' : 'nav__container'}>
       <div className="nav__wrapper">

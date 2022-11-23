@@ -17,7 +17,7 @@ const Cursor = ({
     size = 18,
     hollow = false,
     color = "#2E2E2E",
-    opacity = 1,
+    opacity = 0.7,
     easing = "cubic-bezier(0.18, 0.89, 0.32, 1.28)",
     duration = 0.2,
     custom = false,
@@ -32,7 +32,7 @@ const Cursor = ({
             setX(e.clientX);
             setY(e.clientY);
         };
-    });
+    }, [x, y]);
 
     const styleContent: any = {
         ...base,
@@ -53,17 +53,17 @@ const Cursor = ({
     }
     const styles2 = {
         ...styleContent,
-        opacity: 0.6,
+        opacity: 0.5,
         "transition-duration": 0.3 + "s"
     }
     const styles3 = {
         ...styleContent,
-        opacity: 0.4,
+        opacity: 0.3,
         "transition-duration": 0.4 + "s"
     }
     const styles4 = {
         ...styleContent,
-        opacity: 0.2,
+        opacity: 0.1,
         "transition-duration": 0.47 + "s"
     }
 

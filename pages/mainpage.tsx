@@ -35,15 +35,10 @@ const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
             <section ref={canvasRef} className="section-00">
                 <Canvas />
             </section>
-            <section className="section-01">
-                <AboutMe canvas={canvas} />
-            </section>
-            <section className="section-02">
-                <Skills />
-            </section>
-            <section className="section-03">
-                <Project />
-            </section>
+            <AboutMe canvas={canvas} />
+            <Skills />
+            <Project />
+
             <div>
                 {children}
             </div>

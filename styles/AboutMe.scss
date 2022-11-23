@@ -1,5 +1,5 @@
 .am-container {
-  height: 100vh;
+  height: 65vh;
   line-height: 1.7;
 }
 
@@ -136,17 +136,23 @@
   display: none;
 }
 
+@media (max-height: 800px) {
+  .am-container {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 1200px) {
+  .am-aboutme {
+    left: 6%;
+  }
+}
+
 @media (max-width: 890px) {
   .am-aboutme {
-    position: absolute;
-    width: 100%;
     font-size: 6em;
-    font-weight: 700;
     top: -1.5em;
-    left: 5%;
-    z-index: -100;
-    color: rgb(233, 233, 233);
-    white-space: nowrap;
+    left: 15%;
   }
   .am-about {
     display: flex;

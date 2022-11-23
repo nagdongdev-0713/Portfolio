@@ -4,25 +4,99 @@
 }
 
 .project-wrapper {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.project-slide {
-  display: flex;
-  flex-direction: column;
-  width: 800px;
-  height: 500px;
-}
-
-// .project-slide:nth-child(1) > .slide-img {
-
-// }
-
-.slide-img {
-  background-size: cover;
   width: 100%;
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.menu__item {
+  position: relative;
+}
+
+.project__menu__item-link {
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  transition: opacity 0.4s;
+  color: #000;
+  text-decoration: none;
+  &:hover {
+    transition-duration: 0.1s;
+    opacity: 0;
+  }
+  &::before {
+    // 모든 속성 초기값 변경
+    all: initial;
+    position: absolute;
+    bottom: 60%;
+    left: 0;
+    pointer-events: none;
+  }
+}
+
+.menu__item-img {
+  z-index: 2;
+  position: absolute;
+  height: 10vh;
+  max-height: 600px;
+  opacity: 0;
+  left: 8%;
+  top: 80%;
+  transform: scale(0);
+}
+
+.project__menu__item-link:hover + .menu__item-img {
+  opacity: 1;
+  transform: scale(1);
+  transition: all 0.4s;
+}
+
+.menu {
+  width: 100%;
+  padding: 0 0 25vh;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  font-size: 90px;
+}
+
+.marquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  color: rgb(214, 214, 214);
+  pointer-events: none;
+}
+
+.marquee__inner {
+  // max-content와 auto의 하이브리드 모드
+  // 가용 너비이 부족하지 않는 경우에는 max-content 키워드처럼 담고 있는 컨텐트의 최대 너비를 엘리먼트의 width 속성값으로 사용합니다.
+  // 그러나 가용 너비이 부족하다면 auto 키워드처럼 가용 너비에서 여백(margin)을 제외한 너비를 엘리먼트의 width 속성값으로 사용
+  width: fit-content;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transition: all 0.1s;
+  transform: translate(60px);
+}
+
+// hover시 bg text
+.project__menu__item-link:hover ~ .marquee .marquee__inner {
+  opacity: 1;
+  transform: translate(0px);
+  transition-duration: 0.4s;
+}
+
+.project__menu__item-link,
+.marquee span {
+  white-space: nowrap;
+  font-size: 90px;
+  line-height: 1.15;
+}
+
+.marquee span {
+  font-style: italic;
 }

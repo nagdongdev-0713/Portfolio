@@ -4,34 +4,47 @@ import CSS_img from '../public/CSS3_logo_and_wordmark.svg';
 import HTML5_img from '../public/HTML5_logo_and_wordmark.svg';
 import Next from '../public/Nextjs-logo.svg';
 import Typescript from '../public/Typescript_logo_2020.svg';
-import { useEffect, useRef, useState } from 'react';
-
-interface SvgProps {
-    xmlns?: string;
-}
+import { useEffect } from 'react';
+import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const Skills = () => {
-    const [rectangle, setRectangle] = useState<boolean>();
-    const rectangleRef = useRef<HTMLDivElement | null>(null);
     useEffect(() => {
-        const observer = new IntersectionObserver((entries) => {
-            const entry = entries[0];
-            // console.log('entry', entry);
-            setRectangle(entry.isIntersecting)
-        });
-        observer.observe(rectangleRef.current as HTMLDivElement);
-    }, [])
-    // console.log(rectangleRef.getTotalLength());
+        gsap.registerPlugin(ScrollTrigger);
+
+        gsap.to(".skill-title1", {
+            backgroundPositionX: "0%",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".skill-title1",
+                scrub: 1,
+                start: "top 60%",
+                end: 'bottom 50%',
+            }
+        })
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".skill-title2", {
+            backgroundPositionX: "0%",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".skill-title2",
+                scrub: 1,
+                start: "top 60%",
+                end: 'bottom 50%',
+            }
+        })
+    })
+
     return (
         <div className="skill-container">
             <div className="skill-wrapper container__default">
-                <div className="relative">
+                {/* <div className="relative">
                     <p className="title-padding">SKILL</p>
-                </div>
+                </div> */}
                 <div className="skill-content">
                     <div>
-                        <div ref={rectangleRef} className="skill-animation">
-                            <p className="skill-title">Programming</p>
+                        <div className="skill-animation">
+                            <p className="skill-title1 skill-title">Programming Skills</p>
                         </div>
                         <div className="skill-about">
                             <div className="skill-img-wrapper">
@@ -165,7 +178,7 @@ const Skills = () => {
                     </div>
                     <div>
                         <div className="skill-animation">
-                            <p className="skill-title">Communication</p>
+                            <p className="skill-title2 skill-title">Communication Skills</p>
                         </div>
                         <div className="skill-about">
                             <div className="skill-img-wrapper">
@@ -262,17 +275,6 @@ const Skills = () => {
                                     />
                                 </div>
                                 <p className="skill-skilltext">After Effect</p>
-                            </div>
-                            <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src={Figma}
-                                        alt="Figma"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">Figma</p>
                             </div>
                         </div> */}
                         </div>

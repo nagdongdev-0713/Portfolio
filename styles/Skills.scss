@@ -1,5 +1,5 @@
 .skill-container {
-  height: 100vh;
+  height: 90vh;
 }
 
 .skill-wrapper {
@@ -23,10 +23,33 @@
   display: flex;
 }
 
+.skill-animation {
+  position: relative;
+}
+
 .skill-title {
-  font-size: 20px;
+  font-size: 45px;
   padding-bottom: 20px;
-  margin-left: 10px;
+  font-weight: 700;
+}
+
+.skill-title1 {
+  background: linear-gradient(to right, rgb(56, 56, 56) 50%, rgb(226, 226, 226) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+}
+
+.skill-title2 {
+  margin-top: 40px;
+  background: linear-gradient(to right, rgb(56, 56, 56) 50%, rgb(226, 226, 226) 50%);
+  background-size: 200% 100%;
+  background-position-x: 100%;
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 .skill-design-container {
@@ -50,6 +73,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .skill-skilltext {
@@ -70,10 +94,6 @@
   margin-top: 10px;
 }
 
-.skill-animation {
-  position: relative;
-}
-
 .skill-absolute {
   position: absolute;
 }
@@ -81,7 +101,9 @@
 @media (max-width: 1120px) {
   .skill-title {
     margin-left: 0;
+    font-size: 40px;
   }
+
   .skill-about {
     display: flex;
     justify-content: center;
@@ -96,6 +118,9 @@
 }
 
 @media (max-width: 790px) {
+  .skill-title {
+    font-size: 37px;
+  }
   .skill-partition {
     justify-content: center;
     flex-direction: column;
