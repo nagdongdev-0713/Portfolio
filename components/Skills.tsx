@@ -38,9 +38,6 @@ const Skills = () => {
     return (
         <div className="skill-container">
             <div className="skill-wrapper container__default">
-                {/* <div className="relative">
-                    <p className="title-padding">SKILL</p>
-                </div> */}
                 <div className="skill-content">
                     <div>
                         <div className="skill-animation">
@@ -108,17 +105,6 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
-                                                    src='/pyth.png'
-                                                    alt="PYTHON"
-                                                    width='80'
-                                                    height='80'
-                                                />
-                                            </div>
-                                            <p className="skill-skilltext">Python</p>
-                                        </div>
-                                        <div className="skill-img">
-                                            <div className="skill-img-height">
-                                                <Image
                                                     src={Typescript}
                                                     alt="Ts"
                                                 />
@@ -136,10 +122,6 @@ const Skills = () => {
                                             </div>
                                             <p className="skill-skilltext">SASS</p>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="skill-partition">
-                                    <div className="skill-mobile-partition">
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
@@ -149,6 +131,10 @@ const Skills = () => {
                                             </div>
                                             <p className="skill-skilltext">Next.js</p>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className="skill-partition">
+                                    <div className="skill-mobile-partition">
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image

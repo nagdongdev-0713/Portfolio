@@ -49,33 +49,32 @@
   max-width: 1130px;
 }
 
-.nav-list {
+.nav__list {
   display: flex;
 }
 
-.nav-name {
+.nav__name {
   font-weight: 700;
   font-size: 20px;
   // cursor: pointer;
 }
 
-.nav-list > ul {
+.nav__list-content {
   display: flex;
   flex-direction: row;
   // gap: 1.5rem;
 }
 
-.nav-list > ul > li {
+.nav__menu {
   // cursor: pointer;
   padding-left: 20px;
   transition: 0.2s;
-}
-
-.nav-list > ul > li:hover {
-  // cursor: pointer;
-  color: #e78ea5;
-  transform: translate(0.5%, 0.5%);
-  transition: 0.2s;
+  &:hover {
+    // cursor: pointer;
+    color: #e78ea5;
+    transform: translate(0.5%, 0.5%);
+    transition: 0.2s;
+  }
 }
 
 @media (max-width: 1200px) {

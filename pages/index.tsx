@@ -1,6 +1,6 @@
 import Head from 'next/head'
-import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import Mainpage from './mainpage'
+
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         </title>
         <meta content="이태일 포트폴리오" />
       </Head>
+      <Mainpage />
     </div>
   )
 }

@@ -1,19 +1,20 @@
 import { useInView } from 'react-intersection-observer';
 
-import Mouse from '../components/Mouse'
-import Navbar from '../components/Navbar'
 import Canvas from '../components/Canvas'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
 import React, { useEffect, useRef, useState } from 'react';
+import Footer from '../components/Footer';
+import Navbar from '../components/Navbar';
 
-type MyComponentProps = {
-    children: React.ReactNode;
-    prop: number;
-}
+// type MyComponentProps = {
+//     children: React.ReactNode;
+//     // prop: number;
+// }
 
-const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
+// const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
+const Mainpage = () => {
     // const { ref: myRef, inView: ElementVisible } = useInView(); // intersection Observe
     const [canvas, setCanvas] = useState<number>();
     const canvasRef = useRef<HTMLDivElement | null>(null);
@@ -28,20 +29,26 @@ const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
 
     return (
         <>
-            {/* <Mouse /> */}
             <div className="nav-sticky">
                 <Navbar />
             </div>
             <section ref={canvasRef} className="section-00">
                 <Canvas />
             </section>
-            <AboutMe canvas={canvas} />
-            <Skills />
-            <Project />
+            <section id="about">
+                <AboutMe canvas={canvas} />
+            </section>
+            <section id="skill">
+                <Skills />
+            </section>
+            <section id="project">
+                <Project />
+            </section>
+            <Footer />
 
-            <div>
+            {/* <div>
                 {children}
-            </div>
+            </div> */}
         </>
     )
 }

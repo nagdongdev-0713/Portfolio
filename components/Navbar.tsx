@@ -1,3 +1,4 @@
+import { Link } from "react-scroll"
 import { useState, useEffect } from 'react';
 
 const Navbar = () => {
@@ -26,17 +27,23 @@ const Navbar = () => {
   return (
     <div className={fix ? 'nav__container__fixed' : 'nav__container'}>
       <div className="nav__wrapper">
-        <div className="nav-left">
-          <div className="nav-name" onClick={() => scrollTo(0, 0)}>Portfolio</div>
+        <div className="nav__left">
+          <div className="nav__name" onClick={() => scrollTo(0, 0)}>Portfolio</div>
         </div>
-        <div className="nav-right">
-          <div className="nav-list">
-            <ul>
-              <li className="nav-menu" onClick={() => scrollTo(0, 0)}>Home</li>
-              <li className="nav-menu">About Me</li>
-              <li className="nav-menu">Skills</li>
-              <li className="nav-menu">Project</li>
-            </ul>
+        <div className="nav__right">
+          <div className="nav__list">
+            <div className="nav__list-content">
+              <div className="nav__menu" onClick={() => scrollTo(0, 0)}>Home</div>
+              <Link className="nav__menu" to="about" spy={true} smooth={true} duration={0}>
+                <span>About Me</span>
+              </Link>
+              <Link className="nav__menu" to="skill" spy={true} smooth={true} duration={0}>
+                <span>Skills</span>
+              </Link>
+              <Link className="nav__menu" to="project" spy={true} smooth={true} duration={0}>
+                <span>Project</span>
+              </Link>
+            </div>
           </div>
         </div>
       </div>
