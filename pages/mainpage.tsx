@@ -5,7 +5,6 @@ import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
 import Project from '../components/Project'
 import React, { useEffect, useRef, useState } from 'react';
-import Footer from '../components/Footer';
 import Navbar from '../components/Navbar';
 
 // type MyComponentProps = {
@@ -44,7 +43,6 @@ const Mainpage = () => {
             <section id="project">
                 <Project />
             </section>
-            <Footer />
 
             {/* <div>
                 {children}

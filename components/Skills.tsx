@@ -138,6 +138,17 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
+                                                    src='/vuex.png'
+                                                    alt="VUEX"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill-skilltext">Vuex</p>
+                                        </div>
+                                        <div className="skill-img">
+                                            <div className="skill-img-height">
+                                                <Image
                                                     src='/bootstrap.png'
                                                     alt="Bootstrap"
                                                     width='80'
@@ -204,65 +215,6 @@ const Skills = () => {
                                     </div>
                                 </div>
                             </div>
-                            {/* <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src='/Adobe_Photoshop_CC_icon.svg.png'
-                                        alt="ps"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">Photoshop</p>
-                            </div> */}
-
-                            {/* <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src='/IndESIGN-LOGO.png'
-                                        alt="id"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">InDesign</p>
-                            </div> */}
-
-                            {/* <div className="skill-img-wrapper">
-                            <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src='/Adobe_PremierePro_CC_icon.svg.png'
-                                        alt="pr"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">Premiere Pro</p>
-                            </div>
-                            <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src='/Adobe_Animate_CC_icon_(2020).svg.png'
-                                        alt="an"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">Animate</p>
-                            </div>
-                            <div className="skill-img">
-                                <div className="skill-img-height">
-                                    <Image
-                                        src='/Adobe_After_Effects_CC_icon.svg.png'
-                                        alt="ae"
-                                        width='80'
-                                        height='80'
-                                    />
-                                </div>
-                                <p className="skill-skilltext">After Effect</p>
-                            </div>
-                        </div> */}
                         </div>
                     </div>
                 </div>
