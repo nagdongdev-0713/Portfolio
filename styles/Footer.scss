@@ -4,7 +4,7 @@
   display: flex;
   height: 100%;
   width: 100%;
-  background-color: rgb(240, 240, 240);
+  background-color: rgb(248, 248, 248);
 }
 
 .footer__container {
@@ -27,5 +27,11 @@
   &:hover {
     scale: 110%;
     color: rgb(30, 30, 121);
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer__container {
+    margin: 0 30px;
   }
 }

@@ -75,6 +75,44 @@
   padding-bottom: 30px;
 }
 
+.portfolio__content-ex-text > span {
+  font-weight: 500;
+}
+
+.portfolio__content-ex-write {
+  margin-top: 15px;
+}
+
+.portfolio__content-skill {
+  font-size: 13px;
+}
+
+.portfolio__bottom {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 100px;
+}
+
+.portfolio__bottom-links {
+  margin-bottom: 5px;
+}
+
+.portfolio__bottom-links > a {
+  &:link {
+    color: rgb(86, 86, 255);
+  }
+  &:visited {
+    color: rgb(86, 86, 255);
+  }
+  &:hover {
+    color: #e78ea5;
+  }
+}
+
+.portfolio__bottom-links > span {
+  font-weight: 400;
+}
+
 @media (max-width: 780px) {
   .portfolio__wrapper {
     display: flex;

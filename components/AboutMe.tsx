@@ -86,15 +86,6 @@ const AboutMe = ({ canvas }: any) => {
                                         <p>부산 동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)</p>
                                     </div>
                                 </div>
-
-                                {/* <div className='am-infos-icontext'>
-                                    <div className='iconsize'>
-                                        <p className="subtitle-text bi bi-stack"></p>
-                                    </div>
-                                    <div className="am-education">
-                                        <p>Blue Award 상품문화디자인 국제공모전 특선(2019)</p>
-                                    </div>
-                                </div> */}
                             </div>
                         </div>
                     </div>

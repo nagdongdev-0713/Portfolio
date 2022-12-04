@@ -1,4 +1,4 @@
-import React, { useEffect, useLayoutEffect, useState } from 'react';
+import React, { useLayoutEffect, useState } from 'react';
 import Image from 'next/image';
 import svgMouse from '../public/mouse/mouse.svg'
 
@@ -27,7 +27,7 @@ const Cursor = ({
     const [y, setY] = useState(0);
 
     useLayoutEffect(() => {
-        document.onmousemove = (event: any) => {
+        document.onmousemove = (event: MouseEvent) => {
             let e = event;
             setX(e.clientX);
             setY(e.clientY);
@@ -73,8 +73,6 @@ const Cursor = ({
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles2} />
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles3} />
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles4} />
-            {/* <div id="cursor" {...rest} style={styles} /> */}
-            {/* svg 두세개 더 추가해서 잔상 넣기 */}
         </>
     );
 };

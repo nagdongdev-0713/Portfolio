@@ -11,6 +11,23 @@ const Project = () => {
                 </div>
                 <div className="menu">
                     <div className="menu__item">
+                        <Link href="/portfolio/aco" className="project__menu__item-link">ACO</Link>
+                        <div className="menu__item-img">
+                            <Image
+                                className="menu__item-img-border"
+                                src='/porfolio_img/wait.PNG'
+                                alt="00"
+                                width='800'
+                                height='500'
+                            />
+                        </div>
+                        <div className="marquee">
+                            <div className="marquee__inner">
+                                <span>ACO - 000 - ACO - 000 - ACO - 000 - ACO - 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="menu__item">
                         <Link href="/portfolio/myportfolio" className="project__menu__item-link">Portfolio page</Link>
                         <div className="menu__item-img">
                             <Image

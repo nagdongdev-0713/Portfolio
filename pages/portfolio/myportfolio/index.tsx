@@ -80,13 +80,25 @@ const MyPortfolio: FC<mpProps> = ({ }) => {
                             <p className="portfolio__content-ex-text">
                                 현재 보고 있는 사이트이며 포트폴리오 용도로 제작하였습니다.
                                 <br />
-                                개인 홈페이지다 보니 React를 이용한 다양한 인터랙션(Intersection Observer, gsap등을 사용)을 시도해 볼 수 있었던 작업이었고, Typescript도 학습해볼 수 있었습니다.
+                                개인 홈페이지다 보니 React를 이용한 다양한 인터랙션(Intersection Observer, GSAP, CSS를 사용)을 시도해 볼 수 있었던 작업이었고,
+                                간단한 Typescript도 학습해볼 수 있었습니다.
                             </p>
                             <p className="portfolio__content-ex-text">
-                                불특정다수에게 많이 노출되어야 하는 포트폴리오 사이트의 특성상 서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업이 필요했는데,
-                                Next.js를 사용하여 순수 React로는 작업하기 까다로운 서버 사이드 렌더링을 간단하게 도입해 볼 수 있었습니다.
-                                또한, Nexs.js에 최적화된 플랫폼인 Vercel을 이용한 배포를 경험해볼 수 있었습니다.
+                                또한, 서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업을 체험해보고 싶어서 Next.js사용했으며
+                                Next.js와 호환이 좋은 Vercel을 이용해 정적 웹사이트의 배포를 경험해볼 수 있었습니다.
                             </p>
+                        </div>
+                    </div>
+                    <div className="portfolio__bottom">
+                        <div className="portfolio__bottom-links">
+                            <b>Github: &nbsp;</b>
+                            <a href="https://github.com/k1k2brz/my-portfolio"
+                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/my-portfolio</a>
+                        </div>
+                        <div className="portfolio__bottom-links">
+                            <b>Link: &nbsp;</b>
+                            <a href="https://github.com/k1k2brz/my-portfolio"
+                                target="_blank" rel="noreferrer noopener">배포이후 링크</a>
                         </div>
                     </div>
                 </div>

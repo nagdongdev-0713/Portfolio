@@ -57,7 +57,7 @@
 .nav__name {
   font-weight: 700;
   font-size: 20px;
-  // cursor: pointer;
+  cursor: pointer;
 }
 
 .nav__list-content {
@@ -67,11 +67,11 @@
 }
 
 .nav__menu {
-  // cursor: pointer;
+  cursor: pointer;
   padding-left: 20px;
   transition: 0.2s;
   &:hover {
-    // cursor: pointer;
+    cursor: pointer;
     color: #e78ea5;
     transform: translate(0.5%, 0.5%);
     transition: 0.2s;
