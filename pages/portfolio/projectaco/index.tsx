@@ -23,7 +23,6 @@ function ProjectAco() {
                             modules={[Navigation, Pagination]}
                             spaceBetween={50}
                             slidesPerView={1}
-                            navigation
                             pagination={{ clickable: true }}
                             scrollbar={{ draggable: true }}
                         >
