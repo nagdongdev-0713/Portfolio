@@ -96,8 +96,8 @@ const MyPortfolio: FC<mpProps> = ({ }) => {
                         </div>
                         <div className="portfolio__bottom-links">
                             <b>Link: &nbsp;</b>
-                            <a href="https://github.com/k1k2brz/my-portfolio"
-                                target="_blank" rel="noreferrer noopener">배포이후 링크</a>
+                            <a href="https://my-portfolio-lkp8.vercel.app"
+                                target="_blank" rel="noreferrer noopener">https://my-portfolio-lkp8.vercel.app</a>
                         </div>
                     </div>
                 </div>
