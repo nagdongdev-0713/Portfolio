@@ -11,7 +11,7 @@ const Project = () => {
                 </div>
                 <div className="menu">
                     <div className="menu__item">
-                        <Link href="/portfolio/aco" className="project__menu__item-link">ACO</Link>
+                        <Link href="/portfolio/projectaco" className="project__menu__item-link">ACO</Link>
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
@@ -49,7 +49,7 @@ const Project = () => {
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
-                                src='/porfolio_img/decommi.PNG'
+                                src='/porfolio_img/decommi1.PNG'
                                 alt="02"
                                 width='800'
                                 height='500'

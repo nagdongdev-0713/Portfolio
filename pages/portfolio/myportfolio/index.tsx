@@ -26,7 +26,6 @@ const MyPortfolio: FC<mpProps> = ({ }) => {
                             modules={[Navigation, Pagination]}
                             spaceBetween={50}
                             slidesPerView={1}
-                            // navigation
                             pagination={{ clickable: true }}
                             scrollbar={{ draggable: true }}
                         // onSwiper={(swiper) => console.log(swiper)}

@@ -81,13 +81,11 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
-                                                    src='/Vue.png'
-                                                    alt="VUE.js"
-                                                    width='80'
-                                                    height='80'
+                                                    src={Typescript}
+                                                    alt="Ts"
                                                 />
                                             </div>
-                                            <p className="skill-skilltext">Vue</p>
+                                            <p className="skill-skilltext">Typescript</p>
                                         </div>
                                     </div>
                                     <div className="skill-mobile-partition">
@@ -105,11 +103,48 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
-                                                    src={Typescript}
-                                                    alt="Ts"
+                                                    src='/redux.png'
+                                                    alt="redux"
+                                                    width='80'
+                                                    height='80'
                                                 />
                                             </div>
-                                            <p className="skill-skilltext">Typescript</p>
+                                            <p className="skill-skilltext">Redux</p>
+                                        </div>
+                                        <div className="skill-img">
+                                            <div className="skill-img-height">
+                                                <Image
+                                                    src='/Vue.png'
+                                                    alt="VUE.js"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill-skilltext">Vue</p>
+                                        </div>
+                                        <div className="skill-img">
+                                            <div className="skill-img-height">
+                                                <Image
+                                                    src='/vuex.png'
+                                                    alt="VUEX"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill-skilltext">Vuex</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="skill-partition">
+                                    <div className="skill-mobile-partition">
+                                        <div className="skill-img">
+                                            <div className="skill-img-height">
+                                                <Image
+                                                    src={Next}
+                                                    alt="Next"
+                                                />
+                                            </div>
+                                            <p className="skill-skilltext">Next.js</p>
                                         </div>
                                         <div className="skill-img">
                                             <div className="skill-img-height">
@@ -125,30 +160,6 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
-                                                    src={Next}
-                                                    alt="Next"
-                                                />
-                                            </div>
-                                            <p className="skill-skilltext">Next.js</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="skill-partition">
-                                    <div className="skill-mobile-partition">
-                                        <div className="skill-img">
-                                            <div className="skill-img-height">
-                                                <Image
-                                                    src='/vuex.png'
-                                                    alt="VUEX"
-                                                    width='80'
-                                                    height='80'
-                                                />
-                                            </div>
-                                            <p className="skill-skilltext">Vuex</p>
-                                        </div>
-                                        <div className="skill-img">
-                                            <div className="skill-img-height">
-                                                <Image
                                                     src='/bootstrap.png'
                                                     alt="Bootstrap"
                                                     width='80'
@@ -160,13 +171,13 @@ const Skills = () => {
                                         <div className="skill-img">
                                             <div className="skill-img-height">
                                                 <Image
-                                                    src='/styled.png'
-                                                    alt="StyledComponent"
+                                                    src='/tailwind.png'
+                                                    alt="tailwindcss"
                                                     width='80'
                                                     height='80'
                                                 />
                                             </div>
-                                            <p className="skill-skilltext">Styled-Component</p>
+                                            <p className="skill-skilltext">TailwindCSS</p>
                                         </div>
                                     </div>
                                 </div>

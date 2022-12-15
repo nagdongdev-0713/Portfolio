@@ -7,6 +7,7 @@ export default function PortfolioNav() {
             <Link href='/'>
                 <i className="bi bi-arrow-left portfolio__icon"></i>
             </Link>
+            <span>README.md</span>
             <a href="https://github.com/k1k2brz" className="bi bi-github portfolio__icon"
                 target="_blank" rel="noreferrer noopener"></a>
         </div>

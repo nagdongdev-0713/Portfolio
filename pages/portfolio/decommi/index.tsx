@@ -28,7 +28,7 @@ const Decommi = () => {
                             <SwiperSlide>
                                 <Image
                                     className="portfolio__img-01"
-                                    src='/porfolio_img/decommi.PNG'
+                                    src='/porfolio_img/decommi1.PNG'
                                     alt="slide-01"
                                     width='800'
                                     height='500'

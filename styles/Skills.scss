@@ -98,31 +98,53 @@
   position: absolute;
 }
 
-@media (max-width: 1010px) {
-  .skill-title {
-    margin-left: 0;
-    font-size: 40px;
-  }
+.skill-img-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
 
-  .skill-about {
-    display: flex;
-    justify-content: center;
-  }
-  .skill-animation {
-    display: flex;
-    justify-content: center;
-  }
-  .skill-img-wrapper {
-    flex-direction: column;
+@media (max-width: 1200px) {
+  .skill-wrapper {
+    margin-left: 30px;
+    margin-right: 30px;
   }
 }
 
-@media (max-width: 790px) {
+@media (max-width: 1010px) {
+  // .skill-title {
+  //   margin-left: 0;
+  //   font-size: 40px;
+  // }
+
+  // .skill-about {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+  // .skill-animation {
+  //   display: flex;
+  //   justify-content: center;
+  // }
+  // .skill-img-wrapper {
+  //   flex-direction: column;
+  // }
+}
+
+@media (max-width: 850px) {
   .skill-title {
     font-size: 37px;
   }
   .skill-partition {
     justify-content: center;
     flex-direction: column;
+  }
+  .skill-about {
+    display: flex;
+    justify-content: center;
+    margin-right: 30px;
+  }
+  .skill-animation {
+    display: flex;
+    justify-content: center;
   }
 }
