@@ -29,7 +29,7 @@ function ProjectAco() {
                             <SwiperSlide>
                                 <Image
                                     className="portfolio__img-01"
-                                    src='/porfolio_img/wait.PNG'
+                                    src='/porfolio_img/aco01.PNG'
                                     alt="slide-01"
                                     width='800'
                                     height='500'
@@ -38,8 +38,62 @@ function ProjectAco() {
                             <SwiperSlide>
                                 <Image
                                     className="portfolio__img-01"
-                                    src='/porfolio_img/wait.PNG'
+                                    src='/porfolio_img/aco02.PNG'
                                     alt="slide-02"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco03.PNG'
+                                    alt="slide-03"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco05.PNG'
+                                    alt="slide-05"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco06.PNG'
+                                    alt="slide-06"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco04.PNG'
+                                    alt="slide-04"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco07.PNG'
+                                    alt="slide-07"
+                                    width='800'
+                                    height='500'
+                                />
+                            </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-01"
+                                    src='/porfolio_img/aco08.PNG'
+                                    alt="slide-08"
                                     width='800'
                                     height='500'
                                 />
@@ -49,18 +103,44 @@ function ProjectAco() {
                     <div className="portfolio__content">
                         <div className="portfolio__content-info">
                             <p className="portfolio__content-info-name">ACO - Advance the Ecology</p>
-                            <p className="portfolio__content-info-days">2022.11 · 팀 프로젝트</p>
+                            <p className="portfolio__content-info-days">2022.12 ~ 2023.01 · 팀 프로젝트</p>
                             <span className="portfolio__content-info-tools">React &nbsp;|&nbsp; Typescript
                                 &nbsp;|&nbsp; Redux-Toolkit &nbsp;|&nbsp; Next.js &nbsp;|&nbsp; Tailwindcss &nbsp;</span>
                             <span className="portfolio__content-info-tools">Java &nbsp;|&nbsp; SpringBoot &nbsp;|&nbsp; MySQL &nbsp;|&nbsp; Docker </span>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
-                                환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거 방법부터 친환경Tip이나 제로웨이스트, 미니멀 라이프 등
+                                ACO는 환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거 방법부터 친환경Tip이나 제로웨이스트, 미니멀 라이프 등
                                 나의 발자취를 기록하고 공유하는 공간입니다.
                                 <br />
-                                React와 Typescript를 더 정확히 이해하고 Redux-Toolkit을 사용할 수 있도록 학습하기 위한 프로젝트이며,
-                                웹 개발의 프로세스를 더 정확히 이해하기 위해 백엔드의 기본적인 부분 일부를 공부하고 작성하고 있습니다.
+                                <br />
+                                지난 프로젝트로 개인 포트폴리오 사이트를 만들긴 했지만 아무래도 React에 관련된 지식이나 경험이 부족하다는 생각이 들었습니다.
+                                그래서 React의 기본기를 다지고자 상태 관리 라이브러리를 도입하기로 했습니다. 리서치 결과 여러 가지 상태 관리 라이브러리가 있다는 걸 알았지만,
+                                제가 공부한 적 있는 것부터 정확히 이해하고 넘어가야 한다는 생각에 이론학습과 따라 치기만 해봤던 Redux를 선택했습니다.
+                                또, 보일러플레이트를 줄이기 위해 Saga보다는 Redux-toolkit을 사용하는 것이 좋다고 생각했습니다.
+                                실제로 toolkit을 사용해 보니까 전에 공부할 때 Reducer와 Saga를 치면서 느꼈던 불편함이 많이 사라지고 코드가 깔끔해져 너무 만족스러웠습니다.
+                                여기에 점점 React에 필수가 되어가고 있는 Typescript도 함께 학습하면서 타입지정의 중요성을 배워나갔습니다.
+                                <br />
+                                <br />
+                                그리고 Next.js의 기능 공부 겸 동적 웹사이트의 SSR(서버사이드 렌더링)을 학습하면서 정적 웹사이트에서 사용할 땐 몰랐던 Next.js의 여러 기능을 알 수 있었습니다.
+                                중간중간 React와 문법이 달라 작동이 안 될 때가 있어 애먹은 부분들이 있지만, 그래도 Next.js에 대해 배울 수 있었습니다.
+                                <br />
+                                <br />
+                                이번 프로젝트는 빠르게 기능 위주의 공부를 해보자는 취지의 팀 프로젝트였기 때문에 디자인에 대한 부담을 최대한 덜어내려고
+                                최근에 급부상하고 있는 CSS라이브러리 Tailwindcss를 사용했습니다.
+                                Bootstrap과 결이 비슷하지만, Bootstrap에 비해 Tailwindcss는 커스텀도 편하고 사용성이 더 좋았습니다.
+                                또 Bootstrap을 사용한 디자인이 너무 식상하다면 Tailwindcss를 사용해 보는 것도 좋겠다는 생각을 했습니다.
+                                디자인 레이아웃을 도와주는 flowbite라는 라이브러리를 함께 사용했습니다.
+                                <br />
+                                <br />
+                                그리고 첫 팀 프로젝트를 할 때 백엔드에 대한 이해도가 낮아 프론트단의 구조를 짜거나 팀원들과의 소통에 어려웠던 기억이 있어서
+                                조금이지만 백엔드 작업을 맡아서 해봤습니다. 덕분에 SpringBoot에 대한 두려움을 조금이나마 극복할 수 있었고,
+                                배우기는 했었지만 전체적으로 이해가 잘 안 갔던 부분들이 약간이나마 정리가 되었습니다.
+                                덕분에 이제 SpringBoot를 배우기만 한다면 개인으로도 프로젝트를 진행해 볼 수 있을 것 같다는 자신감이 생겼습니다.
+                                <br />
+                                <br />
+                                마지막으로, Git을 사용하여 다른 사람과 처음 협업을 경험해 봤습니다. 이전 프로젝트에서는 프론트 파트를 혼자 관리했기 때문에
+                                Git의 사용법을 올바르게 숙지하지 못했었지만 이번 프로젝트로 Git으로 관리하는 방법을 배우게 되었습니다.
                             </p>
                         </div>
                     </div>

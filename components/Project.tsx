@@ -15,7 +15,7 @@ const Project = () => {
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
-                                src='/porfolio_img/wait.PNG'
+                                src='/porfolio_img/aco01.PNG'
                                 alt="00"
                                 width='800'
                                 height='500'
@@ -23,7 +23,7 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>ACO - 000 - ACO - 000 - ACO - 000 - ACO - 000</span>
+                                <span>ACO - 004 - ACO - 004 - ACO - 004 - ACO - 004</span>
                             </div>
                         </div>
                     </div>
@@ -40,7 +40,7 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Portfolio - 001 - Portfolio - 001 - Portfolio - 001 - Portfolio - 001</span>
+                                <span>Portfolio - 003 - Portfolio - 003 - Portfolio - 003 - Portfolio - 003</span>
                             </div>
                         </div>
                     </div>
@@ -74,7 +74,7 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Practice - 003 - Practice - 003 - Practice - 003 - Practice - 003</span>
+                                <span>Practice - 001 - Practice - 001 - Practice - 001 - Practice - 001</span>
                             </div>
                         </div>
                     </div>

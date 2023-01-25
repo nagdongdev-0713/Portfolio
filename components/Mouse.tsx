@@ -2,6 +2,8 @@ import React, { useLayoutEffect, useState } from 'react';
 import Image from 'next/image';
 import svgMouse from '../public/mouse/mouse.svg'
 
+// 렉으로 인해 마우스 이벤트 보류
+
 const base = {
     "pointer-events": "none",
     "user-select": "none",

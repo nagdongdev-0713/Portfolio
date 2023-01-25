@@ -28,8 +28,6 @@ const MyPortfolio: FC<mpProps> = ({ }) => {
                             slidesPerView={1}
                             pagination={{ clickable: true }}
                             scrollbar={{ draggable: true }}
-                        // onSwiper={(swiper) => console.log(swiper)}
-                        // onSlideChange={() => console.log('slide change')}
                         >
                             <SwiperSlide>
                                 <Image
@@ -77,14 +75,20 @@ const MyPortfolio: FC<mpProps> = ({ }) => {
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
-                                현재 보고 있는 사이트이며 포트폴리오 용도로 제작하였습니다.
-                                <br />
-                                개인 홈페이지다 보니 React를 이용한 다양한 인터랙션(Intersection Observer, GSAP, CSS를 사용)을 시도해 볼 수 있었던 작업이었고,
-                                간단한 Typescript도 학습해볼 수 있었습니다.
+                                현재 접속중인 사이트이며 포트폴리오 용도로 제작하였습니다. React로 작업한 첫 결과물이며, Next.js와
+                                Typescript를 배워보기 위해 도입해봤습니다.
                             </p>
                             <p className="portfolio__content-ex-text">
+                                Vue를 해봤기에 React의 기본 문법을 빠르게 배울 수 있었고, 어떤 부분이 다르고 어떤 부분이 비슷한지 비교하면서
+                                Javascript기반 프레임워크를 사용하는 것에 대한 흥미와 자신감이 붙었습니다.
+                                그리고 여러가지 인터랙션들을 시도해 볼 수 있어 여태까지 디자인으로만 보았던 애니메이션들을 각각 어떤 방법으로
+                                만들 수 있는지 배워볼 수 있었고, Typescript도 학습해볼 수 있었습니다.
+                                <br />
+                                <br />
                                 또한, 서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업을 체험해보고 싶어서 Next.js사용했으며
                                 Next.js와 호환이 좋은 Vercel을 이용해 정적 웹사이트의 배포를 경험해볼 수 있었습니다.
+                                과거 AWS(EC2 사용)를 사용한 배포를 배웠을 때 상당히 복잡했던 기억이 있는데, Vercel이 Next.js에 특화된 플랫폼이라
+                                세팅을 자동으로 해줘서 너무 좋았습니다.
                             </p>
                         </div>
                     </div>

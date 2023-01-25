@@ -224,6 +224,17 @@ const Skills = () => {
                                         </div>
                                         <p className="skill-skilltext">XD</p>
                                     </div>
+                                    <div className="skill-img">
+                                        <div className="skill-img-height">
+                                            <Image
+                                                src='/Git.png'
+                                                alt="git"
+                                                width='80'
+                                                height='80'
+                                            />
+                                        </div>
+                                        <p className="skill-skilltext">Git</p>
+                                    </div>
                                 </div>
                             </div>
                         </div>

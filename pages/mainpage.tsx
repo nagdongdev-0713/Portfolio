@@ -7,14 +7,7 @@ import Project from '../components/Project'
 import React, { useEffect, useRef, useState } from 'react';
 import Navbar from '../components/Navbar';
 
-// type MyComponentProps = {
-//     children: React.ReactNode;
-//     // prop: number;
-// }
-
-// const Mainpage: React.FC<MyComponentProps> = ({ children }) => {
 const Mainpage = () => {
-    // const { ref: myRef, inView: ElementVisible } = useInView(); // intersection Observe
     const [canvas, setCanvas] = useState<number>();
     const canvasRef = useRef<HTMLDivElement | null>(null);
     useEffect(() => {

@@ -55,7 +55,7 @@ const Practice = () => {
                     <div className="portfolio__content">
                         <div className="portfolio__content-info">
                             <p className="portfolio__content-info-name">연습용 프로젝트 모음</p>
-                            <p className="portfolio__content-info-days">2022.08 ~ · 개인 프로젝트</p>
+                            <p className="portfolio__content-info-days">2022.08 ~ 2022.11 · 개인 프로젝트</p>
                             <p className="portfolio__content-info-tools">프로젝트에 들어가기 전, 공부를 위해 만들었던 작업물 모음입니다.</p>
                         </div>
                         <div className="portfolio__content-ex">
@@ -88,8 +88,9 @@ const Practice = () => {
                                     </p>
                                 </div>
                                 <p className="portfolio__content-ex-write">
-                                    React와 Typescript를 공부하기위해 Slack을 클론코딩 했습니다. 작업을 하면서 React가
+                                    React와 Typescript를 공부하기위해 Slack의 프론트엔드 파트를 클론코딩 했습니다. 작업을 하면서 React가
                                     근본적으로는 Vue와 비슷한 부분이 많다는걸 느껴 React에 대한 자신감을 얻을 수 있었습니다.
+                                    또한, Websocket을 이용한 채팅을 구현해본 경험과 Emotion을 사용해본 경험은 앞으로 많은 도움이 될 것 같습니다.
                                 </p>
                                 <br />
                             </p>
@@ -104,6 +105,8 @@ const Practice = () => {
                                 </div>
                                 <p className="portfolio__content-ex-write">
                                     CSS학습을 위해 오직 CSS만 사용해서 인테리어 관련 웹 사이트라는 컨셉으로 퍼블리싱을 해봤습니다.
+                                    CSS를 배우고나서 레이아웃을 제대로 맞추지도 못하는 상태로 다른 공부를 하다가 다시 한 번 기초부터 바로잡기 위해
+                                    Figma로 해놓은 디자인과 같은 위치에 맞출 수 있도록 노력했습니다.
                                 </p>
                                 <br />
                             </p>

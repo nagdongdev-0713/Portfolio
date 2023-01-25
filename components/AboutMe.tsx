@@ -1,6 +1,10 @@
 import { useCallback, useEffect, useRef, useState } from 'react';
 
-const AboutMe = ({ canvas }: any) => {
+type Props = {
+    canvas: number | undefined;
+}
+
+const AboutMe = ({ canvas }: Props) => {
     const [ElementVisible, setElementVisible] = useState<boolean>();
     const [amAnime, setAmAnime] = useState<number>(0);
     const myRef = useRef<HTMLDivElement | null>(null);
@@ -10,16 +14,14 @@ const AboutMe = ({ canvas }: any) => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
             // console.log('entry', entry);
-            // 위에 찍혔던 boolean인 isIntersecting값이 들어감
             setElementVisible(entry.isIntersecting)
         });
         observer.observe(myRef.current as HTMLDivElement);
-        // aboutMe를 찍으면 둘 다 인식이 돼버려 isIntersecting이 꼬인다
-        // observer.observe(aboutMe.current as HTMLDivElement);
+        // ref를 두개 선언하면 둘 다 인식이 되어 isIntersecting이 꼬인다
     }, [])
 
     const abScroll = useCallback(() => {
-        setAmAnime((window.scrollY - canvas) / 4)
+        setAmAnime((window.scrollY - (canvas as number)) / 4)
     }, [canvas])
 
     useEffect(() => {
