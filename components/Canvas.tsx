@@ -1,4 +1,3 @@
-import Image from "next/image";
 
 const Canvas = () => {
 
@@ -11,7 +10,7 @@ const Canvas = () => {
                     <p className="cav__p">항상 탐구하는 개발자가 되고 싶습니다.</p>
                 </div>
                 <div className='cav__img-container'>
-                    <Image src="/profile/profile.jpg" alt="profile" className="cav__photo" />
+                    <img src="/profile/profile.jpg" alt="profile" className="cav__photo" />
                 </div>
             </div>
         </div>

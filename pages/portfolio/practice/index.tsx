@@ -71,10 +71,10 @@ const Practice = () => {
                                 </div>
                                 <p className="portfolio__content-ex-write">
                                     프론트단의 구조를 잘 짜기 위해서 백엔드에 대한 이해가 더 필요하다 생각해 시작한 CRUD(유저관리와 게시판만들기) 프로젝트입니다.<br />
-                                    Nest.js를 선택한 이유는 지난 팀프로젝트에서 SpringBoot를 조금 해봤을 때 JAVA를 잘 모른다는점 때문에 진입장벽이
+                                    Nest.js를 선택한 이유는 지난 팀 프로젝트에서 SpringBoot를 조금 해봤을 때 JAVA를 잘 모른다는점 때문에 진입장벽이
                                     상당히 높았습니다. 하지만 Nest.js는 Javascript의 문법으로 작성되어 제가 쉽게 읽을 수 있고 SpringBoot와 구조가 비슷한
-                                    프레임워크라서 CRUD정도라면 수월하게 배울 수 있다고 판단했습니다. 
-                                    TypeORM은 Typescript의 지원이 좋고 Nest.js와 궁합이 좋다고 하여 선택하게 되었습니다.
+                                    프레임워크라서 CRUD정도라면 수월하게 배울 수 있다고 판단했습니다.
+                                    또, TypeORM은 Typescript의 지원이 좋고 Nest.js와 궁합이 좋다고 하여 선택하게 되었습니다.
                                 </p>
                                 <br />
                             </div>

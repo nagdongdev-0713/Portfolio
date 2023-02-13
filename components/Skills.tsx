@@ -213,7 +213,7 @@ const Skills = () => {
                     </div>
                     <div>
                         <div className="skill__animation">
-                            <p className="skill__title2 skill__title">Beckend Skills</p>
+                            <p className="skill__title2 skill__title">Backend Skills</p>
                         </div>
                         <div className="skill__about">
                             <div className="skill__img-wrapper">

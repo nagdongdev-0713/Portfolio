@@ -155,6 +155,12 @@ function ProjectAco() {
                     <div className="portfolio__bottom">
                         <div className="portfolio__bottom-links">
                             <div style={{ marginTop: 10 }}>
+                                <b>홈페이지</b>
+                            </div>
+                            <a href="http://43.200.152.148:3075/"
+                                target="_blank" rel="noreferrer noopener">ACO 홈페이지 바로가기</a>
+                            <br />
+                            <div style={{ marginTop: 10 }}>
                                 <b>문제해결 및 메모</b>
                             </div>
                             <a href="https://wonderfulwonder.tistory.com/14"
