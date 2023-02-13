@@ -5,6 +5,7 @@ import HTML5_img from '../public/HTML5_logo_and_wordmark.svg';
 import Next from '../public/Nextjs-logo.svg';
 import Typescript from '../public/Typescript_logo_2020.svg';
 import Vercel from '../public/vercel.svg';
+import nestjs from '../public/nestjs.svg';
 import { useEffect } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
@@ -32,7 +33,7 @@ const Skills = () => {
                 trigger: ".skill__title2",
                 scrub: 1,
                 start: "top 60%",
-                end: 'bottom 50%',
+                end: 'bottom 40%',
             }
         })
 
@@ -42,6 +43,18 @@ const Skills = () => {
             stagger: 1,
             scrollTrigger: {
                 trigger: ".skill__title3",
+                scrub: 1,
+                start: "top 65%",
+                end: 'bottom 50%',
+            }
+        })
+        
+        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".skill__title4", {
+            backgroundPositionX: "0%",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".skill__title4",
                 scrub: 1,
                 start: "top 70%",
                 end: 'bottom 50%',
@@ -200,7 +213,51 @@ const Skills = () => {
                     </div>
                     <div>
                         <div className="skill__animation">
-                            <p className="skill__title2 skill__title">Communication Skills</p>
+                            <p className="skill__title2 skill__title">Beckend Skills</p>
+                        </div>
+                        <div className="skill__about">
+                            <div className="skill__img-wrapper">
+                                <div className="skill__mobile-partition">
+                                    <div className="skill__img">
+                                        <div className="skill__img-height">
+                                            <Image
+                                                src={nestjs}
+                                                alt="nest.js"
+                                                width='80'
+                                                height='80'
+                                            />
+                                        </div>
+                                        <p className="skill__skilltext">Nest.js</p>
+                                    </div>
+                                    <div className="skill__img">
+                                        <div className="skill__img-height">
+                                            <Image
+                                                src='/mysql.png'
+                                                alt="mysql"
+                                                width='80'
+                                                height='80'
+                                            />
+                                        </div>
+                                        <p className="skill__skilltext">MySQL</p>
+                                    </div>
+                                    <div className="skill__img">
+                                        <div className="skill__img-height">
+                                            <Image
+                                                src='/postgresql.png'
+                                                alt="lightsail"
+                                                width='80'
+                                                height='80'
+                                            />
+                                        </div>
+                                        <p className="skill__skilltext">PostgreSQL</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="skill__animation">
+                            <p className="skill__title3 skill__title">Communication Skills</p>
                         </div>
                         <div className="skill__about">
                             <div className="skill__img-wrapper">
@@ -270,7 +327,7 @@ const Skills = () => {
                     </div>
                     <div>
                         <div className="skill__animation">
-                            <p className="skill__title3 skill__title">Deployment Skills</p>
+                            <p className="skill__title4 skill__title">Deployment Skills</p>
                         </div>
                         <div className="skill__about">
                             <div className="skill__img-wrapper">

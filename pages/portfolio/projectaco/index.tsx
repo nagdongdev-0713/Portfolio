@@ -106,24 +106,29 @@ function ProjectAco() {
                             <p className="portfolio__content-info-days">2022.12 ~ 2023.01 · 팀 프로젝트</p>
                             <span className="portfolio__content-info-tools">React &nbsp;|&nbsp; Typescript
                                 &nbsp;|&nbsp; Redux-Toolkit &nbsp;|&nbsp; Next.js &nbsp;|&nbsp; Tailwindcss &nbsp;</span>
-                            <span className="portfolio__content-info-tools">Java &nbsp;|&nbsp; SpringBoot &nbsp;|&nbsp; MySQL &nbsp;|&nbsp; Docker </span>
+                            <span className="portfolio__content-info-tools">Java &nbsp;|&nbsp; SpringBoot &nbsp;|&nbsp; Redis &nbsp;|&nbsp; MySQL &nbsp;|&nbsp; Docker </span>
+                            <span className="portfolio__content-info-tools">AWS Lightsail</span>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
+                                <span>
                                 ACO는 환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거 방법부터 친환경Tip이나 제로웨이스트, 미니멀 라이프 등
                                 나의 발자취를 기록하고 공유하는 공간입니다.
+                                </span>
                                 <br />
                                 <br />
                                 지난 프로젝트로 개인 포트폴리오 사이트를 만들긴 했지만 아무래도 React에 관련된 지식이나 경험이 부족하다는 생각이 들었습니다.
                                 그래서 React의 기본기를 다지고자 상태 관리 라이브러리를 도입하기로 했습니다. 리서치 결과 여러 가지 상태 관리 라이브러리가 있다는 걸 알았지만,
-                                제가 공부한 적 있는 것부터 정확히 이해하고 넘어가야 한다는 생각에 이론학습과 따라 치기만 해봤던 Redux를 선택했습니다.
-                                또, 보일러플레이트를 줄이기 위해 Saga보다는 Redux-toolkit을 사용하는 것이 좋다고 생각했습니다.
+                                제가 공부한 적 있는 것부터 정확히 이해하고 넘어가야 한다는 생각에 클론코딩으로 해봤던 Redux를 선택했습니다.
+                                하지만 세팅 도중 Redux-toolkit의 존재를 알게되었고 보일러플레이트를 줄이기 위해 Saga보다는 Redux-toolkit을 사용하는 것이 좋다고 판단했습니다.
                                 실제로 toolkit을 사용해 보니까 전에 공부할 때 Reducer와 Saga를 치면서 느꼈던 불편함이 많이 사라지고 코드가 깔끔해져 너무 만족스러웠습니다.
-                                여기에 점점 React에 필수가 되어가고 있는 Typescript도 함께 학습하면서 타입지정의 중요성을 배워나갔습니다.
+                                여기에 점점 React에 필수가 되어가고 있는 Typescript도 함께 학습하면서 타입지정의 중요성을 배워나갔으며, SockJs와 StompJS를 이용해 채팅기능을 만들어봤습니다.
+                                한가지 아쉬운점은 response를 받을 때 더 좋은 코드를 찾지 못해 2초라는(lighthouse기준) 딜레이가 생기는걸 해결하지 못한 부분입니다.
+                                이 경험을 통해 성능최적화까지 생각해서 백엔드단과 API에 대해 의논했어야 하는구나 라는걸 배웠습니다.
                                 <br />
                                 <br />
                                 그리고 Next.js의 기능 공부 겸 동적 웹사이트의 SSR(서버사이드 렌더링)을 학습하면서 정적 웹사이트에서 사용할 땐 몰랐던 Next.js의 여러 기능을 알 수 있었습니다.
-                                중간중간 React와 문법이 달라 작동이 안 될 때가 있어 애먹은 부분들이 있지만, 그래도 
+                                배포 후에 tailwindCSS의 SSR과 Next.js의 SSR이 꼬여서 작동이 안되는 현상이 나타나 많이 애먹었지만, 그래도
                                 서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업을 체험해 보면서 Next.js에 대해 많이 배울 수 있는 작업이 되었습니다.
                                 <br />
                                 <br />
@@ -131,7 +136,7 @@ function ProjectAco() {
                                 최근에 급부상하고 있는 CSS라이브러리 Tailwindcss를 사용했습니다.
                                 Bootstrap과 결이 비슷하지만, Bootstrap에 비해 Tailwindcss는 커스텀도 편하고 사용성이 더 좋았습니다.
                                 또 Bootstrap을 사용한 디자인이 너무 식상하다면 Tailwindcss를 사용해 보는 것도 좋겠다는 생각을 했습니다.
-                                디자인 레이아웃 일부는 flowbite라는 라이브러리를 함께 사용했습니다.
+                                반응형 제작을 수월하게 하기 위해 디자인 레이아웃 일부는 flowbite라는 라이브러리를 함께 사용했습니다.
                                 <br />
                                 <br />
                                 그리고 첫 팀 프로젝트를 할 때 백엔드에 대한 이해도가 낮아 프론트단의 구조를 짜거나 팀원들과의 소통에 어려웠던 기억이 있어서
@@ -142,23 +147,42 @@ function ProjectAco() {
                                 거의 참여를 하지 못했었는데, 이번에 동적 웹사이트의 배포를 경험해봄으로써 기획부터 배포까지 모든 사이클을 경험해볼 수 있었습니다.
                                 <br />
                                 <br />
-                                마지막으로, Git을 사용하여 다른 사람과 처음 협업을 경험해 봤습니다. 이전 프로젝트에서는 프론트 파트를 혼자 관리했기 때문에
-                                Git의 사용법을 올바르게 숙지하지 못했었지만 이번 프로젝트로 Git으로 관리하는 방법을 배우게 되었습니다.
+                                마지막으로, 조금이지만 Git을 사용하여 다른 사람과 처음 협업을 경험해 봤습니다. 이전 프로젝트에서는 프론트 파트를 혼자 관리했기 때문에
+                                Git의 사용법을 올바르게 숙지하지 못했었지만 이번 프로젝트로 Git으로 관리하는 방법을 배우게 되었습니다.<br />
                             </p>
                         </div>
                     </div>
                     <div className="portfolio__bottom">
                         <div className="portfolio__bottom-links">
                             <div style={{ marginTop: 10 }}>
+                                <b>문제해결 및 메모</b>
+                            </div>
+                            <a href="https://wonderfulwonder.tistory.com/14"
+                                target="_blank" rel="noreferrer noopener">Next.js의 CORS에러</a>
+                            <br />
+                            <a href="https://wonderfulwonder.tistory.com/17"
+                                target="_blank" rel="noreferrer noopener">FormData사용시 FileReader로 이미지 리스트 만들기</a>
+                            <br />
+                            <a href="https://wonderfulwonder.tistory.com/16"
+                                target="_blank" rel="noreferrer noopener">검색 구현을 위한 Reducer사용</a>
+                            <br />
+                            <a href="https://wonderfulwonder.tistory.com/22"
+                                target="_blank" rel="noreferrer noopener">tailwindCSS사용시 Next의 SSR이 동작하지 않는 경우</a>
+                            <br />
+                            <a href="https://wonderfulwonder.tistory.com/20"
+                                target="_blank" rel="noreferrer noopener">AWS Llightsail에서 Burstable Zone을 넘어갔을 때의 Swap Memory사용</a>
+                        </div>
+                        <div className="portfolio__bottom-links">
+                            <div style={{ marginTop: 10 }}>
                                 <b>프로젝트 Github</b>
                             </div>
                             <span>Frontend: &nbsp;</span>
-                            <a href="https://github.com/k1k2brz/aco-front"
-                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/aco-front</a>
+                            <a href="https://github.com/TEAM-ACO/aco-front"
+                                target="_blank" rel="noreferrer noopener">https://github.com/TEAM-ACO/aco-front</a>
                             <br />
                             <span>Backend: &nbsp;</span>
-                            <a href="https://github.com/k1k2brz/aco-back"
-                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/aco-back</a>
+                            <a href="https://github.com/TEAM-ACO/aco-back"
+                                target="_blank" rel="noreferrer noopener">https://github.com/TEAM-ACO/aco-back</a>
                         </div>
                         <div style={{ marginTop: 10 }}>
                             <b>팀원 Github</b>

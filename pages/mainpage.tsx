@@ -1,5 +1,3 @@
-import { useInView } from 'react-intersection-observer';
-
 import Canvas from '../components/Canvas'
 import AboutMe from '../components/AboutMe'
 import Skills from '../components/Skills'
@@ -13,7 +11,6 @@ const Mainpage = () => {
     useEffect(() => {
         const observer = new IntersectionObserver((entries) => {
             const entry = entries[0];
-            // console.log(entry)
             setCanvas(entry.boundingClientRect.height)
         });
         observer.observe(canvasRef.current as HTMLDivElement);
@@ -36,10 +33,6 @@ const Mainpage = () => {
             <section id="project">
                 <Project />
             </section>
-
-            {/* <div>
-                {children}
-            </div> */}
         </>
     )
 }

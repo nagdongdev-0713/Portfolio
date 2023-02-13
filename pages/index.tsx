@@ -5,7 +5,7 @@ import Mainpage from './mainpage'
 export default function Home() {
   return (
     <>
-      <div>
+      <div className='main'>
         <Mainpage />
         <Footer />
       </div>
