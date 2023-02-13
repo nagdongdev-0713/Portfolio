@@ -68,7 +68,7 @@ const Skills = () => {
                 <div className="skill__content">
                     <div>
                         <div className="skill__animation">
-                            <p className="skill__title1 skill__title">Programming Skills</p>
+                            <p className="skill__title1 skill__title">Frontend Skills</p>
                         </div>
                         <div className="skill__about">
                             <div className="skill__img-wrapper">
