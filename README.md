@@ -9,7 +9,7 @@
 ## Summary
 포트폴리오를 보여주기 위한 웹 사이트 입니다.
 React와 TypeScript를 사용해서 만들어 본 첫 프로젝트이며 간단한 인터랙션과 Next.js+Vercel을 이용한 배포를 학습해볼 수 있는 프로젝트였습니다.
-<br /><br />[더보기](https://my-portfolio-k1k2brz.vercel.app/portfolio/myportfolio)
+<br /><br />[자세히 보기](https://my-portfolio-k1k2brz.vercel.app/portfolio/myportfolio)
 
 ### Install JavaScript Packages
 ```
