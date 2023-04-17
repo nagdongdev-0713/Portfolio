@@ -1,12 +1,20 @@
 const Footer = () => {
     return (
-        <div className="footer">
+        <footer className="footer">
             <div className="footer__container">
-                <div className="footer__copyright">Lee-TaeIl Portfolio 2022.</div>
-                <a href="https://github.com/k1k2brz" className="bi bi-github footer__icon"
-                    target="_blank" rel="noreferrer noopener"></a>
+                <div className="footer__copyright">Lee-TaeIl Portfolio 2022 ~</div>
+                <div className="footer__bi">
+                    <a href="https://github.com/k1k2brz" className="footer__icon"
+                        target="_blank" rel="noreferrer noopener">
+                        <img src="https://img.shields.io/badge/Github-000000?style=flat&logo=github&logoColor=white" />
+                    </a>
+                    <a href="https://wonderfulwonder.tistory.com/" className="footer__icon"
+                        target="_blank" rel="noreferrer noopener">
+                        <img src="https://img.shields.io/badge/Blog-000000?style=flat&logo=tistory&logoColor=white" />
+                    </a>
+                </div>
             </div>
-        </div>
+        </footer>
     )
 }
 

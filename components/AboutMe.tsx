@@ -85,7 +85,7 @@ const AboutMe = ({ canvas }: Props) => {
                                         <p className="none subtitle-text bi bi-mortarboard-fill"></p>
                                     </div>
                                     <div className="am-education">
-                                        <p>부산 동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)</p>
+                                        <p>동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)</p>
                                     </div>
                                 </div>
                             </div>

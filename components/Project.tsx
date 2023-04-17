@@ -1,8 +1,14 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { useRouter } from 'next/router'
 
-const Project = () => {
+interface props {
+    onModal: () => void;
+    onAcoModal: () => void;
+    onPortfolioModal: () => void;
+    onDecommiModal: () => void;
+}
+
+const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal }: props) => {
     return (
         <div className="project-container">
             <div className="project-wrapper container__default">
@@ -11,11 +17,34 @@ const Project = () => {
                 </div>
                 <div className="menu">
                     <div className="menu__item">
-                        <Link href="/portfolio/projectaco" className="project__menu__item-link">ACO</Link>
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onModal}
+                        >GPT Translator</button>
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
-                                src='/porfolio_img/aco01.PNG'
+                                src='/porfolio_img/gpttranslator.PNG'
+                                alt="01"
+                                width='800'
+                                height='500'
+                            />
+                        </div>
+                        <div className="marquee">
+                            <div className="marquee__inner">
+                                <span>GPT Translator - 004 - GPT Translator - 004 - GPT Translator - 004 - GPT Translator - 004</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="menu__item">
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onAcoModal}
+                        >A.C.O.</button>
+                        <div className="menu__item-img">
+                            <Image
+                                className="menu__item-img-border"
+                                src='/porfolio_img/aco05.PNG'
                                 alt="00"
                                 width='800'
                                 height='500'
@@ -23,12 +52,15 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>ACO - 004 - ACO - 004 - ACO - 004 - ACO - 004</span>
+                                <span>ACO - 003 - ACO - 003 - ACO - 003 - ACO - 003</span>
                             </div>
                         </div>
                     </div>
                     <div className="menu__item">
-                        <Link href="/portfolio/myportfolio" className="project__menu__item-link">Portfolio page</Link>
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onPortfolioModal}
+                        >Portfolio Page</button>
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
@@ -40,33 +72,19 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Portfolio - 003 - Portfolio - 003 - Portfolio - 003 - Portfolio - 003</span>
+                                <span>Portfolio - 002 - Portfolio - 002 - Portfolio - 002 - Portfolio - 002</span>
                             </div>
                         </div>
                     </div>
                     <div className="menu__item">
-                        <Link href="/portfolio/decommi" className="project__menu__item-link">Decommi</Link>
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onDecommiModal}
+                        >Decommi</button>
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
                                 src='/porfolio_img/decommi1.PNG'
-                                alt="02"
-                                width='800'
-                                height='500'
-                            />
-                        </div>
-                        <div className="marquee">
-                            <div className="marquee__inner">
-                                <span>Decommi - 002 - Decommi - 002 - Decommi - 002 - Decommi - 002</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div className="menu__item">
-                        <Link href='/portfolio/practice' className="project__menu__item-link">Practice</Link>
-                        <div className="menu__item-img">
-                            <Image
-                                className="menu__item-img-border"
-                                src='/porfolio_img/interior.PNG'
                                 alt="01"
                                 width='800'
                                 height='500'
@@ -74,7 +92,7 @@ const Project = () => {
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Practice - 001 - Practice - 001 - Practice - 001 - Practice - 001</span>
+                                <span>Decommi - 001 - Decommi - 001 - Decommi - 001 - Decommi - 001</span>
                             </div>
                         </div>
                     </div>

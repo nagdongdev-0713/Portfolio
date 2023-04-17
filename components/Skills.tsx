@@ -1,7 +1,5 @@
 import Image from "next/image";
 import Figma from '../public/figma_vector.svg';
-import CSS_img from '../public/CSS3_logo_and_wordmark.svg';
-import HTML5_img from '../public/HTML5_logo_and_wordmark.svg';
 import Next from '../public/Nextjs-logo.svg';
 import Typescript from '../public/Typescript_logo_2020.svg';
 import Vercel from '../public/vercel.svg';
@@ -25,17 +23,17 @@ const Skills = () => {
             }
         })
 
-        gsap.registerPlugin(ScrollTrigger);
-        gsap.to(".skill__title2", {
-            backgroundPositionX: "0%",
-            stagger: 1,
-            scrollTrigger: {
-                trigger: ".skill__title2",
-                scrub: 1,
-                start: "top 60%",
-                end: 'bottom 40%',
-            }
-        })
+        // gsap.registerPlugin(ScrollTrigger);
+        // gsap.to(".skill__title2", {
+        //     backgroundPositionX: "0%",
+        //     stagger: 1,
+        //     scrollTrigger: {
+        //         trigger: ".skill__title2",
+        //         scrub: 1,
+        //         start: "top 60%",
+        //         end: 'bottom 40%',
+        //     }
+        // })
 
         gsap.registerPlugin(ScrollTrigger);
         gsap.to(".skill__title3", {
@@ -60,7 +58,7 @@ const Skills = () => {
                 end: 'bottom 50%',
             }
         })
-    })
+    }, [])
 
     return (
         <div className="skill-container">
@@ -77,8 +75,10 @@ const Skills = () => {
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
-                                                    src={HTML5_img}
-                                                    alt="HTML5"
+                                                    src='/html.png'
+                                                    alt="css"
+                                                    width='80'
+                                                    height='80'
                                                 />
                                             </div>
                                             <p className="skill__skilltext">HTML</p>
@@ -86,10 +86,10 @@ const Skills = () => {
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
-                                                    src={CSS_img}
-                                                    alt="CSS"
-                                                    width='57'
-                                                    height='57'
+                                                    src='/css.png'
+                                                    alt="css"
+                                                    width='80'
+                                                    height='80'
                                                 />
                                             </div>
                                             <p className="skill__skilltext">CSS</p>
@@ -121,8 +121,8 @@ const Skills = () => {
                                                 <Image
                                                     src='/React.png'
                                                     alt="REACT"
-                                                    width='80'
-                                                    height='80'
+                                                    fill
+                                                    sizes="80px, auto"
                                                 />
                                             </div>
                                             <p className="skill__skilltext">React</p>
@@ -132,8 +132,8 @@ const Skills = () => {
                                                 <Image
                                                     src='/redux.png'
                                                     alt="redux"
-                                                    width='80'
-                                                    height='80'
+                                                    fill
+                                                    sizes="80px, auto"
                                                 />
                                             </div>
                                             <p className="skill__skilltext">Redux</p>
@@ -154,8 +154,8 @@ const Skills = () => {
                                                 <Image
                                                     src='/vuex.png'
                                                     alt="VUEX"
-                                                    width='80'
-                                                    height='80'
+                                                    fill
+                                                    sizes="80px, auto"
                                                 />
                                             </div>
                                             <p className="skill__skilltext">Vuex</p>
@@ -178,8 +178,8 @@ const Skills = () => {
                                                 <Image
                                                     src='/sass.png'
                                                     alt="SASS"
-                                                    width='80'
-                                                    height='80'
+                                                    fill
+                                                    sizes="auto"
                                                 />
                                             </div>
                                             <p className="skill__skilltext">SASS</p>
@@ -200,8 +200,8 @@ const Skills = () => {
                                                 <Image
                                                     src='/tailwind.png'
                                                     alt="tailwindcss"
-                                                    width='80'
-                                                    height='80'
+                                                    fill
+                                                    sizes="80px, auto"
                                                 />
                                             </div>
                                             <p className="skill__skilltext">TailwindCSS</p>
@@ -211,7 +211,7 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    <div>
+                    {/* <div>
                         <div className="skill__animation">
                             <p className="skill__title2 skill__title">Backend Skills</p>
                         </div>
@@ -254,7 +254,7 @@ const Skills = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                     <div>
                         <div className="skill__animation">
                             <p className="skill__title3 skill__title">Communication Skills</p>
@@ -268,8 +268,8 @@ const Skills = () => {
                                             <Image
                                                 src='/Adobe_Illustrator_CC_icon.svg.png'
                                                 alt="ai"
-                                                width='80'
-                                                height='80'
+                                                fill
+                                                sizes="80px, auto"
                                             />
                                         </div>
                                         <p className="skill__skilltext">Illustrator</p>
@@ -290,8 +290,8 @@ const Skills = () => {
                                             <Image
                                                 src='/Adobe_XD_CC_icon.svg.png'
                                                 alt="xd"
-                                                width='80'
-                                                height='80'
+                                                fill
+                                                sizes="80px, auto"
                                             />
                                         </div>
                                         <p className="skill__skilltext">XD</p>

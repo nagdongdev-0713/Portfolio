@@ -4,7 +4,6 @@ import "bootstrap-icons/font/bootstrap-icons.css";
 import Mouse from '../components/Mouse';
 import Head from 'next/head';
 
-
 export default function App({ Component, pageProps }: AppProps) {
 
   return (

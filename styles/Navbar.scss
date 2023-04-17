@@ -1,21 +1,29 @@
-.nav__container {
-  padding: 5px 0;
-  border-bottom: 0px solid white;
+.nav-sticky {
+  position: fixed;
+  width: 100%;
+  top: 0px;
+  z-index: 100;
+}
+
+@mixin backdropfilter {
+  height: 100%;
   transition: 0.2s;
-  -webkit-backdrop-filter: saturate(180%) blur(15px);
-  -moz-backdrop-filter: saturate(180%) blur(15px);
-  -o-backdrop-filter: saturate(180%) blur(15px);
-  backdrop-filter: saturate(180%) blur(15px);
+  -webkit-backdrop-filter: saturate(180%) blur(5px);
+  -moz-backdrop-filter: saturate(180%) blur(5px);
+  -o-backdrop-filter: saturate(180%) blur(5px);
+  backdrop-filter: saturate(180%) blur(5px);
+  background-color: transparent;
+}
+
+.nav__container {
+  border-bottom: 0px solid white;
+  @include backdropfilter()
 }
 
 .nav__container__fixed {
   padding: 5px 0;
   border-bottom: 0.5px solid grey;
-  transition: 0.2s;
-  -webkit-backdrop-filter: saturate(180%) blur(15px);
-  -moz-backdrop-filter: saturate(180%) blur(15px);
-  -o-backdrop-filter: saturate(180%) blur(15px);
-  backdrop-filter: saturate(180%) blur(15px);
+  @include backdropfilter()
 }
 
 .nav__wrapper {

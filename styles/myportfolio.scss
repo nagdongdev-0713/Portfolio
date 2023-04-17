@@ -1,18 +1,68 @@
+.modal-backdrop {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 0;
+  left: 0;
+  z-index: 1050;
+  width: 100vw;
+  height: 100vh;
+  background-color: #ededed89;
+}
+
+.modal::-webkit-scrollbar {
+  width: 10px;
+}
+.modal::-webkit-scrollbar-thumb {
+  height: 30%;
+  background: #2E2E2E;
+}
+.modal::-webkit-scrollbar-track {
+  background: #817e8a89;
+}
+
+.modal {
+  position: relative;
+  border: solid 1px gray;
+  z-index: 1055;
+  width: 95%;
+  height: 95%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+  background-color: white;
+  animation: ScaleIn 0.2s ease-in-out;
+}
+
+@keyframes ScaleIn {
+  0% {
+    transform: translateY(-500px);
+    opacity: .5;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .portfolio {
   position: relative;
   line-height: 1.5;
 }
 
 .fixed {
-  position: fixed;
-  max-width: 1140px;
+  position: sticky;
   width: 100%;
   top: 0px;
-  z-index: 100;
-  -webkit-backdrop-filter: saturate(180%) blur(15px);
-  -moz-backdrop-filter: saturate(180%) blur(15px);
-  -o-backdrop-filter: saturate(180%) blur(15px);
-  backdrop-filter: saturate(180%) blur(15px);
+  left: 0px;
+  z-index: 1060;
+  background-color: black;
+  color: white;
+}
+
+.fixed .bi-x {
+  color: white
 }
 
 .portfolio__header {
@@ -24,11 +74,11 @@
 
 .portfolio__header,
 .portfolio__wrapper {
-  margin: 0 30px;
+  margin: 0 50px;
 }
 
 .portfolio__container {
-  margin-top: 100px;
+  margin-top: 30px;
 }
 
 .portfolio__icon {
@@ -95,6 +145,9 @@
 
 .portfolio__bottom-links {
   margin-bottom: 5px;
+}
+.portfolio__bottom-solve {
+  margin: 10px 0 3px 0;
 }
 
 .portfolio__bottom-links > a {

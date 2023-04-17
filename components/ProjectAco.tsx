@@ -5,15 +5,23 @@ import SwiperCore, { Navigation, Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import PortfolioNav from '../../../components/PortfolioNav'
 
 SwiperCore.use([Navigation, Pagination]);
 
-function ProjectAco() {
+interface props {
+    onModal: () => void;
+}
+
+function ProjectAco({ onModal }: props) {
     return (
-        <div className="portfolio container__default">
+        <div className="portfolio modal">
             <div className="fixed">
-                <PortfolioNav />
+                <div className="portfolio__header">
+                    <span>A.C.O. / README.md</span>
+                    <button>
+                        <i className="bi bi-x portfolio__icon" onClick={onModal}></i>
+                    </button>
+                </div>
             </div>
             <div className="portfolio__container">
                 <div className="portfolio__wrapper">
@@ -112,23 +120,23 @@ function ProjectAco() {
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
                                 <span>
-                                ACO는 환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거 방법부터 친환경Tip이나 제로웨이스트, 미니멀 라이프 등
+                                ACO는 환경보호를 위한 기록 커뮤니티라는 주제로 간단한 분리수거 방법부터 친환경 Tip이나 제로 웨이스트, 미니멀 라이프 등
                                 나의 발자취를 기록하고 공유하는 공간입니다.
                                 </span>
                                 <br />
                                 <br />
                                 지난 프로젝트로 개인 포트폴리오 사이트를 만들긴 했지만 아무래도 React에 관련된 지식이나 경험이 부족하다는 생각이 들었습니다.
                                 그래서 React의 기본기를 다지고자 상태 관리 라이브러리를 도입하기로 했습니다. 리서치 결과 여러 가지 상태 관리 라이브러리가 있다는 걸 알았지만,
-                                제가 공부한 적 있는 것부터 정확히 이해하고 넘어가야 한다는 생각에 클론코딩으로 해봤던 Redux를 선택했습니다.
-                                하지만 세팅 도중 Redux-toolkit의 존재를 알게되었고 보일러플레이트를 줄이기 위해 Saga보다는 Redux-toolkit을 사용하는 것이 좋다고 판단했습니다.
+                                제가 공부한 적 있는 것부터 정확히 이해하고 넘어가야 한다는 생각에 클론 코딩으로 해봤던 Redux를 선택했습니다.
+                                하지만 세팅 도중 Redux-toolkit의 존재를 알게 되었고 보일러 플레이트를 줄이기 위해 Saga보다는 Redux-toolkit을 사용하는 것이 좋다고 판단했습니다.
                                 실제로 toolkit을 사용해 보니까 전에 공부할 때 Reducer와 Saga를 치면서 느꼈던 불편함이 많이 사라지고 코드가 깔끔해져 너무 만족스러웠습니다.
-                                여기에 점점 React에 필수가 되어가고 있는 Typescript도 함께 학습하면서 타입지정의 중요성을 배워나갔으며, SockJs와 StompJS를 이용해 채팅기능을 만들어봤습니다.
-                                한가지 아쉬운점은 response를 받을 때 더 좋은 코드를 찾지 못해 2초라는(lighthouse기준) 딜레이가 생기는걸 해결하지 못한 부분입니다.
-                                이 경험을 통해 성능최적화까지 생각해서 백엔드단과 API에 대해 의논했어야 하는구나 라는걸 배웠습니다.
+                                여기에 점점 React에 필수가 되어가고 있는 Typescript도 함께 학습하면서 타입 지정의 중요성을 배워나갔으며, SockJs와 StompJS를 이용해 채팅 기능을 만들어봤습니다.
+                                한 가지 아쉬운 점은 서버에서 게시글 데이터를 받을 때 더 좋은 코드를 찾지 못해 약간의 딜레이가 생기는걸 해결하지 못한 부분입니다.
+                                이 경험을 통해 성능 최적화까지 생각해 코드를 작성해야 하는구나라는걸 배웠습니다.
                                 <br />
                                 <br />
                                 그리고 Next.js의 기능 공부 겸 동적 웹사이트의 SSR(서버사이드 렌더링)을 학습하면서 정적 웹사이트에서 사용할 땐 몰랐던 Next.js의 여러 기능을 알 수 있었습니다.
-                                배포 후에 tailwindCSS의 SSR과 Next.js의 SSR이 꼬여서 작동이 안되는 현상이 나타나 많이 애먹었지만, 그래도
+                                배포 후에 tailwindCSS의 SSR과 Next.js의 SSR이 꼬여서 작동이 안 되는 현상이 나타나 많이 애먹었지만, 그래도
                                 서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업을 체험해 보면서 Next.js에 대해 많이 배울 수 있는 작업이 되었습니다.
                                 <br />
                                 <br />
@@ -141,10 +149,10 @@ function ProjectAco() {
                                 <br />
                                 그리고 첫 팀 프로젝트를 할 때 백엔드에 대한 이해도가 낮아 프론트단의 구조를 짜거나 팀원들과의 소통에 어려웠던 기억이 있어서
                                 조금이지만 백엔드 작업을 맡아서 해봤습니다. 덕분에 SpringBoot에 대한 두려움을 조금이나마 극복할 수 있었고,
-                                배울때 전체적으로 이해가 잘 안 갔던 부분들이 어느정도 정리가 되었습니다.
+                                배울 때 전체적으로 이해가 잘 안 갔던 부분들이 어느 정도 정리가 되었습니다.
                                 덕분에 SpringBoot를 조금씩 공부하면서 개인 프로젝트를 진행해 볼 수 있을 것 같다는 자신감이 생겼습니다.<br />
                                 또, AWS lightsail을 사용해 프론트단의 배포를 해봤습니다. 지난 프로젝트에서는 배포와 관련된 작업에
-                                거의 참여를 하지 못했었는데, 이번에 동적 웹사이트의 배포를 경험해봄으로써 기획부터 배포까지 모든 사이클을 경험해볼 수 있었습니다.
+                                거의 참여를 하지 못했었는데, 이번에 동적 웹사이트의 배포를 경험해 봄으로써 기획부터 배포까지 모든 사이클을 경험해 볼 수 있었습니다.
                                 <br />
                                 <br />
                                 마지막으로, 조금이지만 Git을 사용하여 다른 사람과 처음 협업을 경험해 봤습니다. 이전 프로젝트에서는 프론트 파트를 혼자 관리했기 때문에
@@ -160,7 +168,7 @@ function ProjectAco() {
                             <a href="http://43.200.152.148:3075/"
                                 target="_blank" rel="noreferrer noopener">ACO 홈페이지 바로가기</a>
                             <br />
-                            <div style={{ marginTop: 10 }}>
+                            <div className='portfolio__bottom-solve'>
                                 <b>문제해결 및 메모</b>
                             </div>
                             <a href="https://wonderfulwonder.tistory.com/14"
