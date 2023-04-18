@@ -78,6 +78,24 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                             <p className="portfolio__content-info-name">개인 포트폴리오 사이트</p>
                             <p className="portfolio__content-info-days">2022.11 · 개인 프로젝트</p>
                             <p className="portfolio__content-info-tools">React &nbsp;|&nbsp; Next.js &nbsp;|&nbsp; Typescript &nbsp;|&nbsp; Sass</p>
+                            <p className="portfolio__content-info-days small">
+                                <span>주요 기능:</span> 프론트엔드 개발자 포트폴리오, Github및 블로그 링크
+                            </p>
+                            <p className="portfolio__content-info-days small">
+                                <span>담당 파트: </span>
+                                <br />
+                                - React(Hooks) 및 Javascript ES6+ 문법을 사용한 정적 웹 페이지 개발
+                                <br />
+                                - SCSS문법을 사용한 CSS관리
+                                <br />
+                                - 간단한 인터렉티브 웹 구현
+                                <br />
+                                - Next.js를 사용한 정적 웹 페이지의 서버사이드렌더링 경험
+                                <br />
+                                - 반응형 웹 페이지
+                                <br />
+                                - Vercel을 이용한 배포
+                            </p>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
@@ -103,8 +121,8 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                         </div>
                         <div className="portfolio__bottom-links">
                             <b>Link: &nbsp;</b>
-                            <a href="https://my-portfolio-k1k2brz.vercel.app"
-                                target="_blank" rel="noreferrer noopener">https://my-portfolio-k1k2brz.vercel.app</a>
+                            <a href="https://my-portfolio-lkp8.vercel.app/"
+                                target="_blank" rel="noreferrer noopener">https://my-portfolio-lkp8.vercel.app/</a>
                         </div>
                     </div>
                 </div>

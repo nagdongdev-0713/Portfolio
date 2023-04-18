@@ -138,10 +138,31 @@ const Decommi = ({ onModal }: props) => {
                         <div className="portfolio__content-info">
                             <p className="portfolio__content-info-name">Decommi - SNS 프라이버시 다이어리</p>
                             <p className="portfolio__content-info-days">2022.08~2022.10 · 4인 팀 프로젝트</p>
-                            <div>
+                            <div className="portfolio__content-info-days">
                                 <span className="portfolio__content-info-tools">Vue &nbsp;|&nbsp; Vuex &nbsp;|&nbsp; Bootstrap5 &nbsp;|&nbsp; Sass</span>
                                 <span className="portfolio__content-info-tools">&nbsp;|&nbsp; Java &nbsp;|&nbsp; SpringBoot &nbsp;|&nbsp; MariaDB </span>
                             </div>
+                            <p className="portfolio__content-info-days small">
+                                <span>주요 기능:</span> 사용자 및 게시판, 댓글 CRUD, 선호 태그리스트, 북마크, 신고, 검색, 관리자페이지
+                            </p>
+                            <p className="portfolio__content-info-days small">
+                                <span>담당 파트: </span>
+                                관리자 페이지의 일부를 제외한 프론트엔드 전체를 담당
+                                <br />
+                                - Vue3의 Composition API와 Javascript ES6+를 사용한 개발
+                                <br />
+                                - Vuex를 이용한 전역 상태관리
+                                <br />
+                                - Sass를 사용한 CSS 관리 및 퍼블리싱
+                                <br />
+                                - CK Editor를 이용한 게시판 구현
+                                <br />
+                                - HTTP 통신 및 REST API 서버 연동
+                                <br />
+                                - Bootstrap5를 사용한 UI개발
+                                <br />
+                                - Figma를 사용한 전체 디자인
+                            </p>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">

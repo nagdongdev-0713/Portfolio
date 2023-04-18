@@ -116,6 +116,29 @@ function ProjectAco({ onModal }: props) {
                                 &nbsp;|&nbsp; Redux-Toolkit &nbsp;|&nbsp; Next.js &nbsp;|&nbsp; Tailwindcss &nbsp;</span>
                             <span className="portfolio__content-info-tools">Java &nbsp;|&nbsp; SpringBoot &nbsp;|&nbsp; Redis &nbsp;|&nbsp; MySQL &nbsp;|&nbsp; Docker </span>
                             <span className="portfolio__content-info-tools">AWS Lightsail</span>
+                            <p className="portfolio__content-info-days small">
+                                <span>주요 기능:</span> 사용자 및 게시판, 댓글 CRUD, 태그, 좋아요, 신고, 검색, 관리자페이지, 이미지 첨부
+                            </p>
+                            <p className="portfolio__content-info-days small">
+                                <span>담당 파트: </span>
+                                회원가입과 신고를 제외한 프론트엔드 전체 담당 및 백엔드 비밀번호 수정 및 좋아요 기능 담당
+                                <br />
+                                React(Hooks)와 Javascript ES6+ 문법을 사용한 UI개발
+                                <br />
+                                Redux-toolkit을 사용한 상태관리
+                                <br />
+                                Next.js를 사용한 동적 웹 페이지의 SSR
+                                <br />
+                                TailwindCSS을 사용한 디자인과 퍼블리싱
+                                <br />
+                                반응형 웹
+                                <br />
+                                StompJS와 SockJS를 사용한 채팅 구현
+                                <br />
+                                Java, Spring Framework를 사용한 REST API활용 Web개발 및 서버 연동
+                                <br />
+                                AWS Lightsail을 사용한 프론트엔드 파트 배포
+                            </p>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
@@ -136,8 +159,9 @@ function ProjectAco({ onModal }: props) {
                                 <br />
                                 <br />
                                 그리고 Next.js의 기능 공부 겸 동적 웹사이트의 SSR(서버사이드 렌더링)을 학습하면서 정적 웹사이트에서 사용할 땐 몰랐던 Next.js의 여러 기능을 알 수 있었습니다.
-                                배포 후에 tailwindCSS의 SSR과 Next.js의 SSR이 꼬여서 작동이 안 되는 현상이 나타나 많이 애먹었지만, 그래도
-                                서버 사이드 렌더링을 이용한 검색 엔진 최적화(SEO) 작업을 체험해 보면서 Next.js에 대해 많이 배울 수 있는 작업이 되었습니다.
+                                배포 후에 tailwindCSS의 SSR과 Next.js의 SSR이 꼬여서 작동이 안 되는 현상이 나타나 많이 애먹었지만, 
+                                Next.js에 대해 많이 배울 수 있는 작업이었습니다.
+                                한가지 아쉬운 점은 검색 엔진 최적화(SEO)의 과정 중에서 도메인 최적화 작업을 경험하지 못했던 점입니다.
                                 <br />
                                 <br />
                                 이번 프로젝트는 빠르게 기능 위주의 공부를 해보자는 취지의 팀 프로젝트였기 때문에 디자인에 대한 부담을 최대한 덜어내려고

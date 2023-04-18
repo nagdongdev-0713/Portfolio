@@ -121,6 +121,17 @@
   padding-bottom: 10px;
 }
 
+.portfolio__content-info-days {
+  margin-top: 4px;
+}
+
+.portfolio__content-info-days.small {
+  font-size: small;
+  span {
+    font-weight: 600;
+  }
+}
+
 .portfolio__content-ex-text {
   padding-bottom: 30px;
 }

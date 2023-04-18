@@ -52,11 +52,27 @@ const Translator = ({ onModal }: props) => {
                         </Swiper>
                     </div>
                     <div className="portfolio__content">
-                    <div className="portfolio__content-info">
+                        <div className="portfolio__content-info">
                             <p className="portfolio__content-info-name">chatGPT Translator(제작중)</p>
                             <p className="portfolio__content-info-days">2023.04 · 팀 프로젝트</p>
                             <span className="portfolio__content-info-tools">Vanilla Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django</span>
                             {/* <span className="portfolio__content-info-tools">AWS</span> */}
+                            <p className="portfolio__content-info-days small">
+                                <span>주요 기능:</span> GPT API를 사용한 번역
+                            </p>
+                            <p className="portfolio__content-info-days small">
+                                <span>담당 파트: </span>
+                                프론트엔드 전체를 담당(예정)
+                                <br />
+                                - Javascript ES6+를 사용한 개발
+                                <br />
+                                - GPT API 번역 기능 관련 프론트 작업
+                                <br />
+                                - 다크 모드 개발
+                                <br />
+                                - 순수 CSS를 사용한 퍼블리싱
+                                <br />
+                            </p>
                         </div>
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
@@ -80,8 +96,6 @@ const Translator = ({ onModal }: props) => {
                                 기능적으로는
                                 평소 라이브러리로 사용하던 textarea의 크기 조절이나 Select태그의 option커스텀과 관련된 부분들을 직접 만들거나,
                                 유저가 다크 모드의 on/off를 선택할 수 있도록 dataset을 사용한 다크 모드를 도입해 봤습니다.
-                                <br />
-                                그리고 History API를 사용해 뒤로 가기를 눌렀을 때 직전에 했던 번역으로 돌아갈 수 있도록 해주는 기능을 도입했습니다.
                                 <br />
                                 <br />
                                 비록 간단한 프로젝트지만 현업자와 협업을 해볼 수 있었다는 것만으로도 의미 있는 프로젝트였습니다.
