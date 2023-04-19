@@ -114,6 +114,17 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                         </div>
                     </div>
                     <div className="portfolio__bottom">
+                    <div className="portfolio__bottom-links">
+                            <div className='portfolio__bottom-solve'>
+                                <b>문제해결 및 메모</b>
+                            </div>
+                            <a href="https://wonderfulwonder.tistory.com/73"
+                                target="_blank" rel="noreferrer noopener">Intersection Observer를 사용한 애니메이션 만들기</a>
+                            <br />
+                            <a href="https://wonderfulwonder.tistory.com/93"
+                                target="_blank" rel="noreferrer noopener">모달창과 스크롤 고정</a>
+                            <br />
+                        </div>
                         <div className="portfolio__bottom-links">
                             <b>Github: &nbsp;</b>
                             <a href="https://github.com/k1k2brz/my-portfolio"

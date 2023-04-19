@@ -5,7 +5,7 @@ type Props = {
 }
 
 const AboutMe = ({ canvas }: Props) => {
-    const [ElementVisible, setElementVisible] = useState<boolean>();
+    const [ElementVisible, setElementVisible] = useState<boolean>(false);
     const [amAnime, setAmAnime] = useState<number>(0);
     const myRef = useRef<HTMLDivElement | null>(null);
     const aboutMe = useRef<HTMLDivElement | null>(null)

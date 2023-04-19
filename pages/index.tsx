@@ -10,7 +10,7 @@ import Decommi from '../components/decommi';
 import ProjectAco from '../components/ProjectAco';
 import MyPortfolio from '../components/MyPortfolio';
 
-export default function Home() {
+const Home = () => {
     const [canvas, setCanvas] = useState<number>();
     const [trslModal, setTrslModal] = useState(false);
     const [acoModal, setAcoModal] = useState(false);
@@ -74,12 +74,12 @@ export default function Home() {
     }, [decommiModal, lockScroll, openScroll])
 
     useEffect(() => {
-      const observer = new IntersectionObserver((entries) => {
-          const entry = entries[0];
-          setCanvas(entry.boundingClientRect.height)
-      });
-      observer.observe(canvasRef.current as HTMLDivElement);
-  }, [])
+        const observer = new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            setCanvas(entry.boundingClientRect.height)
+        });
+        observer.observe(canvasRef.current as HTMLDivElement);
+    }, [])
 
   return (
     <>
@@ -121,3 +121,5 @@ export default function Home() {
     </>
   )
 }
+
+export default Home;

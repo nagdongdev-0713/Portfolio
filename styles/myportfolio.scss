@@ -32,10 +32,10 @@
   overflow-y: auto;
   outline: 0;
   background-color: white;
-  animation: ScaleIn 0.2s ease-in-out;
+  animation: TranslateIn 0.2s ease-in-out;
 }
 
-@keyframes ScaleIn {
+@keyframes TranslateIn {
   0% {
     transform: translateY(-500px);
     opacity: .5;
