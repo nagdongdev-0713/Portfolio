@@ -17,5 +17,5 @@ npm install
 ```
 ### Run Frontend Server
 ```
-npm run dev
+npm run start
 ```
