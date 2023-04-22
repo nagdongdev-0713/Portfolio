@@ -1,4 +1,5 @@
 import Image from "next/image";
+import HTML from '../public/HTML5_logo_and_wordmark.svg';
 import Figma from '../public/figma_vector.svg';
 import Next from '../public/Nextjs-logo.svg';
 import Typescript from '../public/Typescript_logo_2020.svg';
@@ -75,11 +76,8 @@ const Skills = () => {
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
-                                                    src='/html.png'
+                                                    src={HTML}
                                                     alt="html"
-                                                    width='80'
-                                                    height='80'
-                                                    priority={true}
                                                 />
                                             </div>
                                             <p className="skill__skilltext">HTML</p>
@@ -87,11 +85,10 @@ const Skills = () => {
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
-                                                    src='/css.png'
+                                                    src='/CSS3.png'
                                                     alt="css"
-                                                    width='80'
+                                                    width='58'
                                                     height='80'
-                                                    priority={true}
                                                 />
                                             </div>
                                             <p className="skill__skilltext">CSS</p>
