@@ -76,9 +76,10 @@ const Skills = () => {
                                             <div className="skill__img-height">
                                                 <Image
                                                     src='/html.png'
-                                                    alt="css"
+                                                    alt="html"
                                                     width='80'
                                                     height='80'
+                                                    priority={true}
                                                 />
                                             </div>
                                             <p className="skill__skilltext">HTML</p>
@@ -90,6 +91,7 @@ const Skills = () => {
                                                     alt="css"
                                                     width='80'
                                                     height='80'
+                                                    priority={true}
                                                 />
                                             </div>
                                             <p className="skill__skilltext">CSS</p>
