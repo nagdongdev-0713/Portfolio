@@ -53,7 +53,7 @@ const Translator = ({ onModal }: props) => {
                     </div>
                     <div className="portfolio__content">
                         <div className="portfolio__content-info">
-                            <p className="portfolio__content-info-name">chatGPT Translator(제작중)</p>
+                            <p className="portfolio__content-info-name">chatGPT Translator(제작완료, 배포예정)</p>
                             <p className="portfolio__content-info-days">2023.04 · 팀 프로젝트</p>
                             <span className="portfolio__content-info-tools">Vanilla Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django</span>
                             {/* <span className="portfolio__content-info-tools">AWS</span> */}
@@ -62,7 +62,7 @@ const Translator = ({ onModal }: props) => {
                             </p>
                             <p className="portfolio__content-info-days small">
                                 <span>담당 파트: </span>
-                                프론트엔드 전체를 담당(예정)
+                                프론트엔드 담당
                                 <br />
                                 - Javascript ES6+를 사용한 개발
                                 <br />
@@ -102,9 +102,6 @@ const Translator = ({ onModal }: props) => {
                                 내가 작성한 코드에 대해 피드백을 받거나, 조심해야 될 부분과 팁을 알려주시면서 작업을 했기에 실력 많이 향상됨을 느꼈던 프로젝트였습니다.
                                 <br />
                                 <br />
-                                * 현재 번역기는 완성이 되었지만, 추가적인 기능을 더 넣기 위해 의논 단계에 있습니다.
-                                <br />
-                                번역된 단어의 여러 가지 뜻을 추가적으로 검색할 수 있게 만드는 기능을 생각 중이며, 프로젝트 완성 시 배포 후 도메인을 사고 구글 애드를 넣을 예정입니다.
                             </p>
                         </div>
                     </div>
@@ -122,7 +119,7 @@ const Translator = ({ onModal }: props) => {
                                 <b>프로젝트 Github</b>
                             </div>
                             <a href="https://github.com/k1k2brz/gpt_translator"
-                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/gpt_translator</a>
+                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/gpt_translator-1</a>
                             <br />
                         </div>
                         <div className="portfolio__bottom-links" style={{marginTop: 10}}>
