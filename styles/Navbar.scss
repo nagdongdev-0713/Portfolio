@@ -66,12 +66,22 @@
 
 @media (max-width: 1200px) {
   .nav__wrapper {
-    margin: 0 30px;
+    margin: auto;
+    padding: 0 30px;
   }
 }
 
 @media (max-width: 768px) {
-  .nav__wrapper {
-    margin: 0 30px;
+  .nav-sticky {
+    position: sticky;
+  }
+}
+
+@media (max-width: 412px) {
+  .nav__name {
+    font-size: 15px;
+  }
+  .nav__menu {
+    font-size: 15px;
   }
 }

@@ -110,28 +110,9 @@
 
 @media (max-width: 1200px) {
   .skill__wrapper {
-    margin-left: 30px;
-    margin-right: 30px;
+    margin: auto;
+    padding: 0 30px;
   }
-}
-
-@media (max-width: 1010px) {
-  // .skill__title {
-  //   margin-left: 0;
-  //   font-size: 40px;
-  // }
-
-  // .skill__about {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-  // .skill__animation {
-  //   display: flex;
-  //   justify-content: center;
-  // }
-  // .skill__img-wrapper {
-  //   flex-direction: column;
-  // }
 }
 
 @media (max-width: 850px) {
@@ -145,10 +126,15 @@
   .skill__about {
     display: flex;
     justify-content: center;
-    margin-right: 30px;
   }
   .skill__animation {
     display: flex;
     justify-content: center;
+  }
+}
+
+@media (max-width: 412px) {
+  .skill__title {
+    font-size: 30px;
   }
 }

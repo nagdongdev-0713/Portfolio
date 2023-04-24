@@ -118,7 +118,7 @@ const Translator = ({ onModal }: props) => {
                             <div style={{ marginTop: 10 }}>
                                 <b>프로젝트 Github</b>
                             </div>
-                            <a href="https://github.com/k1k2brz/gpt_translator"
+                            <a href="https://github.com/k1k2brz/gpt_translator-1"
                                 target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/gpt_translator-1</a>
                             <br />
                         </div>

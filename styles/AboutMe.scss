@@ -149,6 +149,11 @@
 }
 
 @media (max-width: 890px) {
+  .am-wrapper {
+    margin: auto;
+    padding: 0 30px;
+  }
+  
   .am-aboutme {
     font-size: 6em;
     top: -1.5em;
@@ -176,5 +181,15 @@
 
   .am-infos-two {
     gap: 10px;
+  }
+}
+
+
+@media (max-width: 412px) {
+  .am-infos {
+    font-size: 16px;
+  }
+  .am-infos-two {
+    font-size: 15px;
   }
 }
