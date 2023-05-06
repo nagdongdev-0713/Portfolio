@@ -53,28 +53,28 @@ const Cursor = ({
         opacity: opacity,
         "transition-duration": duration + "s"
     }
-    const styles2 = {
-        ...styleContent,
-        opacity: 0.5,
-        "transition-duration": 0.3 + "s"
-    }
-    const styles3 = {
-        ...styleContent,
-        opacity: 0.3,
-        "transition-duration": 0.4 + "s"
-    }
-    const styles4 = {
-        ...styleContent,
-        opacity: 0.1,
-        "transition-duration": 0.47 + "s"
-    }
+    // const styles2 = {
+    //     ...styleContent,
+    //     opacity: 0.5,
+    //     "transition-duration": 0.3 + "s"
+    // }
+    // const styles3 = {
+    //     ...styleContent,
+    //     opacity: 0.3,
+    //     "transition-duration": 0.4 + "s"
+    // }
+    // const styles4 = {
+    //     ...styleContent,
+    //     opacity: 0.1,
+    //     "transition-duration": 0.47 + "s"
+    // }
 
     return (
         <>
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles} />
-            <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles2} />
+            {/* <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles2} />
             <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles3} />
-            <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles4} />
+            <Image className="mouse-event" {...rest} src={svgMouse} alt='' style={styles4} /> */}
         </>
     );
 };

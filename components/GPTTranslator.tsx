@@ -5,13 +5,16 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
+
 interface props {
+    trslModal: boolean;
     onModal: () => void
 }
 
-const Translator = ({ onModal }: props) => {
+const Translator = ({ onModal, trslModal }: props) => {
+
     return (
-        <section className="portfolio modal">
+        <article className="portfolio modal">
             <div className="fixed">
                 <div className="portfolio__header">
                     <span>GPT Translator / README.md</span>
@@ -58,7 +61,13 @@ const Translator = ({ onModal }: props) => {
                             <span className="portfolio__content-info-tools">Vanilla Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django</span>
                             {/* <span className="portfolio__content-info-tools">AWS</span> */}
                             <p className="portfolio__content-info-days small">
-                                <span>주요 기능:</span> GPT API를 사용한 번역
+                                <span>주요 기능:</span>
+                                <br />
+                                - chatGPT API를 사용한 번역 (10개 언어)
+                                <br />
+                                - History API를 사용한 이전 번역 저장
+                                <br />
+                                - 사용자가 on/off를 설정할 수 있는 다크 모드
                             </p>
                             <p className="portfolio__content-info-days small">
                                 <span>담당 파트: </span>
@@ -66,11 +75,11 @@ const Translator = ({ onModal }: props) => {
                                 <br />
                                 - Javascript ES6+를 사용한 개발
                                 <br />
-                                - GPT API 번역 기능 관련 프론트 작업
+                                - chatGPT API 번역 기능 관련 프론트 작업
                                 <br />
                                 - 다크 모드 개발
                                 <br />
-                                - 순수 CSS를 사용한 퍼블리싱
+                                - Baffle을 사용한 애니메이션
                                 <br />
                             </p>
                         </div>
@@ -82,25 +91,20 @@ const Translator = ({ onModal }: props) => {
                                 </span>
                                 <br />
                                 <br />
-                                얼마 전에 GPT4를 사용해 보고 이제는 chatGPT가 프로그래밍에서 빠질 수 없는 모델이 되었다는 생각이 들었습니다.
-                                그래서 간단하게 GPT를 사용한 작업을 체험해 보고 싶어서 시작하게 된 GPT 번역기 프로젝트입니다.
-                                동시에, Javascript의 기본기를 다시 공부하면서 프레임워크나 라이브러리의 도움 없이 프론트엔드 파트를 한번 만들어 봐야겠다고 느꼈기에
-                                Javascript를 더 이해하기 위한 프로젝트이기도 합니다.
+                                <span>기본기를 다시 복습할 수 있었습니다.</span>
+                                <br />
+                                Javascript의 기본기를 다시 공부하면서 시작한 프로젝트이기에 놓치고 있던 부분들을 다시 한 번 되새길 수 있었습니다.
+                                <br />
+                                평소에 라이브러리로 사용했던 기능들을 Vanilla Javascript로 구현하면 어떤 원리로 작동하는지 체험해볼 수 있었습니다.
+                                <br />
+                                React나 Vue에서 주어지는 포맷, 컴포넌트 단위의 작성법, DOM의 변화를 직접 관리할 일이 거의 없는 것 등
+                                생산성에 많은 도움을 받고 있다는 걸 느꼈고 원리를 아는게 중요하다는 사실을 배웠습니다.
                                 <br />
                                 <br />
-                                연습을 위해 Vanilla JS와 순수 CSS로 작업을 하면서 평소에 프레임워크나 라이브러리의 도움을 많이 받고 있었다는 걸 알았습니다.
-                                React나 Vue에서 주어지는 포맷이나 컴포넌트 단위의 작성법, Virtual DOM 덕분에 DOM의 변화를 직접 관리할 일이 거의 없는 것 등에서
-                                생산성에 많은 도움을 받고 있다는 걸 느꼈습니다.
-                                <br />
-                                <br />
-                                기능적으로는
-                                평소 라이브러리로 사용하던 textarea의 크기 조절이나 Select태그의 option커스텀과 관련된 부분들을 직접 만들거나,
-                                유저가 다크 모드의 on/off를 선택할 수 있도록 dataset을 사용한 다크 모드를 도입해 봤습니다.
-                                <br />
+                                <span>현업자와의 협업을 경험 할 수 있었습니다.</span>
                                 <br />
                                 비록 간단한 프로젝트지만 현업자와 협업을 해볼 수 있었다는 것만으로도 의미 있는 프로젝트였습니다.
-                                내가 작성한 코드에 대해 피드백을 받거나, 조심해야 될 부분과 팁을 알려주시면서 작업을 했기에 실력 많이 향상됨을 느꼈던 프로젝트였습니다.
-                                <br />
+                                내가 작성한 코드에 대해 피드백을 받거나, 조심해야 될 부분과 팁을 배우면서 작업을 했기에 실력 많이 향상됨을 느꼈습니다.
                                 <br />
                             </p>
                         </div>
@@ -138,7 +142,7 @@ const Translator = ({ onModal }: props) => {
                     </div>
                 </div>
             </div>
-        </section>
+        </article>
     )
 }
 

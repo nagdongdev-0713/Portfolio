@@ -9,9 +9,11 @@ import Skills from '../components/Skills';
 import Decommi from '../components/decommi';
 import ProjectAco from '../components/ProjectAco';
 import MyPortfolio from '../components/MyPortfolio';
+import MyBlog from '../components/MyBlog';
 
 const Home = () => {
     const [canvas, setCanvas] = useState<number>();
+    const [blogModal, setBlogModal] = useState(false);
     const [trslModal, setTrslModal] = useState(false);
     const [acoModal, setAcoModal] = useState(false);
     const [portfolioModal, setPortfolioModal] = useState(false);
@@ -29,6 +31,7 @@ const Home = () => {
     }, [currentScroll]);
     
     const openScroll = useCallback(() => {
+        document.querySelector('.modal-backdrop > .modal')?.scrollTo(0, 0)
         document.body.style.removeProperty('overflow');
         document.body.style.removeProperty('position');
         document.body.style.removeProperty('width');
@@ -36,6 +39,15 @@ const Home = () => {
         window.scrollTo(0, currentScroll)
     }, [currentScroll]);
     
+
+    const onBlogModalToggle = useCallback(() => {
+        setBlogModal((prev) => !prev)
+        if (!blogModal) {
+          lockScroll()
+        } else {
+          openScroll()
+        }
+    }, [blogModal, lockScroll, openScroll])
 
     const onTrslModalToggle = useCallback(() => {
         setTrslModal((prev) => !prev)
@@ -84,7 +96,7 @@ const Home = () => {
   return (
     <>
       <div className={`${trslModal? 'modal-backdrop show' : 'none'}`}>
-        <Translator onModal={onTrslModalToggle} />
+        <Translator trslModal={trslModal} onModal={onTrslModalToggle} />
       </div>
       <div className={`${acoModal? 'modal-backdrop show' : 'none'}`}>
         <ProjectAco onModal={onAcoModalToggle} />
@@ -94,6 +106,9 @@ const Home = () => {
       </div>
       <div className={`${decommiModal? 'modal-backdrop show' : 'none'}`}>
         <Decommi onModal={onDecommiModalToggle} />
+      </div>
+      <div className={`${blogModal? 'modal-backdrop show' : 'none'}`}>
+        <MyBlog onBlogModal={onBlogModalToggle} />
       </div>
       <main className='main'>
           <nav className="nav-sticky">
@@ -110,6 +125,7 @@ const Home = () => {
           </section>
           <section id="project">
               <Project 
+                onBlogModal={onBlogModalToggle} 
                 onModal={onTrslModalToggle} 
                 onAcoModal={onAcoModalToggle} 
                 onPortfolioModal={onPortfolioModalToggle}  

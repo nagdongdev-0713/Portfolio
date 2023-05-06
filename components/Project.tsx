@@ -1,13 +1,14 @@
 import Image from 'next/image';
 
 interface props {
+    onBlogModal: () => void;
     onModal: () => void;
     onAcoModal: () => void;
     onPortfolioModal: () => void;
     onDecommiModal: () => void;
 }
 
-const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal }: props) => {
+const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlogModal }: props) => {
     return (
         <div className="project-container">
             <div className="project-wrapper container__default">
@@ -15,26 +16,6 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal }: prop
                     <div className="project__title-name">Project</div>
                 </div>
                 <div className="menu">
-                    <div className="menu__item">
-                        <button
-                            className="project__menu__item-link"
-                            onClick={onModal}
-                        >GPT Translator</button>
-                        <div className="menu__item-img">
-                            <Image
-                                className="menu__item-img-border"
-                                src='/porfolio_img/gpttranslator.PNG'
-                                alt="01"
-                                width='800'
-                                height='500'
-                            />
-                        </div>
-                        <div className="marquee">
-                            <div className="marquee__inner">
-                                <span>GPT Translator - 004 - GPT Translator - 004 - GPT Translator - 004 - GPT Translator - 004</span>
-                            </div>
-                        </div>
-                    </div>
                     <div className="menu__item">
                         <button
                             className="project__menu__item-link"
@@ -92,6 +73,47 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal }: prop
                         <div className="marquee">
                             <div className="marquee__inner">
                                 <span>Decommi - 001 - Decommi - 001 - Decommi - 001 - Decommi - 001</span>
+                            </div>
+                        </div>
+                    </div>
+                    {/* 배포 작업중 */}
+                    <div className="menu__item">
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onModal}
+                        >GPT Translator</button>
+                        <div className="menu__item-img">
+                            <Image
+                                className="menu__item-img-border"
+                                src='/porfolio_img/gpttranslator.PNG'
+                                alt="01"
+                                width='800'
+                                height='500'
+                            />
+                        </div>
+                        <div className="marquee">
+                            <div className="marquee__inner">
+                                <span>GPT Translator - 000 - GPT Translator - 000 - GPT Translator - 000 - GPT Translator - 000</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="menu__item">
+                        <button
+                            className="project__menu__item-link"
+                            onClick={onBlogModal}
+                        >My Blog (제작중)</button>
+                        <div className="menu__item-img">
+                            <Image
+                                className="menu__item-img-border"
+                                src='/porfolio_img/wait.PNG'
+                                alt="wait"
+                                width='800'
+                                height='500'
+                            />
+                        </div>
+                        <div className="marquee">
+                            <div className="marquee__inner">
+                                <span>My Blog - 004 - My Blog - 004 - My Blog - 004 - My Blog - 004</span>
                             </div>
                         </div>
                     </div>

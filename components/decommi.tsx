@@ -147,7 +147,7 @@ const Decommi = ({ onModal }: props) => {
                             </p>
                             <p className="portfolio__content-info-days small">
                                 <span>담당 파트: </span>
-                                관리자 페이지의 일부를 제외한 프론트엔드 전체를 담당
+                                관리자 페이지의 일부를 제외한 프론트엔드 전체를 담당 (주요기능 전부)
                                 <br />
                                 - Vue3의 Composition API와 Javascript ES6+를 사용한 개발
                                 <br />
@@ -155,7 +155,7 @@ const Decommi = ({ onModal }: props) => {
                                 <br />
                                 - Sass를 사용한 CSS 관리 및 퍼블리싱
                                 <br />
-                                - CK Editor를 이용한 게시판 구현
+                                - CK Editor를 이용한 게시판 구현 및 댓글 공개-비공개처리
                                 <br />
                                 - HTTP 통신 및 REST API 서버 연동
                                 <br />
