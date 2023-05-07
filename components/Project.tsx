@@ -25,7 +25,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                             <Image
                                 className="menu__item-img-border"
                                 src='/porfolio_img/aco05.PNG'
-                                alt="00"
+                                alt="aco-05"
                                 width='800'
                                 height='500'
                             />
@@ -45,7 +45,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                             <Image
                                 className="menu__item-img-border"
                                 src='/porfolio_img/portfolio.PNG'
-                                alt="01"
+                                alt="portfolio-01"
                                 width='800'
                                 height='500'
                             />
@@ -65,7 +65,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                             <Image
                                 className="menu__item-img-border"
                                 src='/porfolio_img/decommi1.PNG'
-                                alt="01"
+                                alt="decommi-01"
                                 width='800'
                                 height='500'
                             />
@@ -86,7 +86,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                             <Image
                                 className="menu__item-img-border"
                                 src='/porfolio_img/gpttranslator.PNG'
-                                alt="01"
+                                alt="gpt-01"
                                 width='800'
                                 height='500'
                             />

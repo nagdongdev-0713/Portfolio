@@ -37,7 +37,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi1.PNG'
-                                    alt="slide-01"
+                                    alt="decommi-01"
                                     width='800'
                                     height='500'
                                 />
@@ -46,7 +46,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi2.PNG'
-                                    alt="slide-02"
+                                    alt="decommi-02"
                                     width='800'
                                     height='500'
                                 />
@@ -55,7 +55,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi3.PNG'
-                                    alt="slide-03"
+                                    alt="decommi-03"
                                     width='800'
                                     height='500'
                                 />
@@ -64,7 +64,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi3-2.PNG'
-                                    alt="slide-03-2"
+                                    alt="decommi-03-2"
                                     width='800'
                                     height='500'
                                 />
@@ -73,7 +73,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi4.PNG'
-                                    alt="slide-04"
+                                    alt="decommi-04"
                                     width='800'
                                     height='500'
                                 />
@@ -82,7 +82,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi5.PNG'
-                                    alt="slide-05"
+                                    alt="decommi-05"
                                     width='800'
                                     height='500'
                                 />
@@ -91,7 +91,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi6.PNG'
-                                    alt="slide-06"
+                                    alt="decommi-06"
                                     width='800'
                                     height='500'
                                 />
@@ -100,7 +100,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi7.PNG'
-                                    alt="slide-07"
+                                    alt="decommi-07"
                                     width='800'
                                     height='500'
                                 />
@@ -109,7 +109,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi8.PNG'
-                                    alt="slide-08"
+                                    alt="decommi-08"
                                     width='800'
                                     height='500'
                                 />
@@ -118,7 +118,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi9.PNG'
-                                    alt="slide-09"
+                                    alt="decommi-09"
                                     width='800'
                                     height='500'
                                 />
@@ -127,7 +127,7 @@ const Decommi = ({ onModal }: props) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/decommi10.PNG'
-                                    alt="slide-10"
+                                    alt="decommi-10"
                                     width='800'
                                     height='500'
                                 />

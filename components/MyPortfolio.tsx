@@ -39,7 +39,7 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/portfolio.PNG'
-                                    alt="slide-01"
+                                    alt="portfolio-01"
                                     width='800'
                                     height='500'
                                 />
@@ -48,7 +48,7 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/portfolio2.PNG'
-                                    alt="slide-01"
+                                    alt="portfolio-02"
                                     width='800'
                                     height='500'
                                 />
@@ -57,7 +57,7 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/portfolio3.PNG'
-                                    alt="slide-01"
+                                    alt="portfolio-03"
                                     width='800'
                                     height='500'
                                 />
@@ -66,7 +66,7 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/portfolio4.PNG'
-                                    alt="slide-01"
+                                    alt="portfolio-04"
                                     width='800'
                                     height='500'
                                 />
@@ -103,12 +103,13 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                                 Typescript를 배워보기 위해 도입해 봤습니다.
                             </p>
                             <p className="portfolio__content-ex-text">
-                                처음 도입하는 기술들이 많았던 프로젝트지만 이전에 Vue로 프로젝트를 해본 경험이 있었기에 빠르게 배울 수 있었습니다. 
-                                또, 처음으로 인터랙티브 웹을 적용해 보면서 애니메이션이 어떻게 구현되는지 배울 수 있었고, 
-                                반응형 웹 페이지도 학습해 볼 수 있었기에 새로운 기술을 배우고 적용하는 것에 대해 흥미와 자신감이 붙었습니다.
+                                처음 도입하는 기술들이 많았던 프로젝트지만 이전에 Vue로 프로젝트를 해본 경험이 있었기에 빠르게 배울 수 있었습니다.
+                                덕분에 새로운 기술을 배우고 적용하는 것에 대한 자신감이 생겼습니다.
+                                또, 자유롭게 인터랙티브 웹을 적용해 보면서 애니메이션이 어떻게 구현되는지 배울 수 있었고,
+                                반응형 웹 페이지도 학습해 볼 수 있었기에 재밌었던 프로젝트입니다.
                                 <br />
                                 <br />
-                                그리고 Next.js와 호환이 좋은 Vercel을 이용해 처음으로 정적 웹사이트의 배포를 경험해 볼 수 있었습니다.
+                                마지막으로 Next.js와 호환이 좋은 Vercel을 이용해 처음으로 정적 웹사이트의 배포를 경험해 볼 수 있었습니다.
                             </p>
                         </div>
                     </div>

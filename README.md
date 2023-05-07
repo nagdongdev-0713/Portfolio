@@ -1,19 +1,15 @@
-![portfolio](https://user-images.githubusercontent.com/102219209/217453889-a74ab72a-82fb-47b7-935a-c0754ffeeec0.PNG)
-
 ## My-Portfolio Link
 [포트폴리오 바로가기](https://my-portfolio-lkp8.vercel.app/)
+
+## 이미지
+<img src="https://user-images.githubusercontent.com/102219209/217453889-a74ab72a-82fb-47b7-935a-c0754ffeeec0.PNG" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/102219209/236689623-1298491b-4263-42f0-9182-177b97aad159.PNG" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/102219209/236689649-39b62cef-1f43-455e-afff-72472fa3fed4.PNG" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/102219209/236689677-51aa5b03-334f-4007-8242-aa32de9f9aa5.PNG" width="50%" height="50%">
+<img src="https://user-images.githubusercontent.com/102219209/236689869-b6d940e2-3ee5-4baf-9dd2-9ca5adb8068c.png" width="50%" height="50%"><img src="https://user-images.githubusercontent.com/102219209/236689757-3c77d79e-d663-43f1-959c-ffbc160c4f51.png" width="50%" height="50%">
 
 
 ## 기획의도
 
-저의 포트폴리오를 보여주기 위한 웹 사이트 입니다.
-
-
-## 개발 환경
-
-### 에디터
-- Visual Studio Code
-
+저의 포트폴리오를 보여주기 위한 웹 사이트 입니다. 간단한 자기소개와 그동안 했던 프로젝트를 담았습니다.
 
 ## 기술 스택
 
@@ -55,18 +51,17 @@
 
 ## 프로젝트 후기, 느낀점
 
-### 자신감이 붙었던 작업
-
-처음 도입하는 기술들이 많았던 프로젝트지만 이전에 Vue로 프로젝트를 해본 경험이 있었기에 빠르게 배울 수 있었습니다. 또, 처음으로 인터랙티브 웹을 적용해 보면서 애니메이션이 어떻게 구현되는지 배울 수 있었고, 반응형 웹 페이지도 학습해 볼 수 있었기에 새로운 기술을 배우고 적용하는 것에 대해 흥미와 자신감이 붙었습니다.
+처음 도입하는 기술들이 많았던 프로젝트지만 이전에 Vue로 프로젝트를 해본 경험이 있었기에 빠르게 배울 수 있었습니다. 덕분에 새로운 기술을 배우고 적용하는 것에 대한 자신감이 생겼습니다.
+또, 자유롭게 인터랙티브 웹을 적용해 보면서 애니메이션이 어떻게 구현되는지 배울 수 있었고, 반응형 웹 페이지도 학습해 볼 수 있었기에 재밌었던 프로젝트입니다.
 <br />
-그리고 Vercel을 이용해 처음으로 정적 웹사이트의 배포를 경험해 볼 수 있었습니다.
+마지막으로 Vercel을 이용해 처음으로 정적 웹사이트의 배포를 경험해 볼 수 있었습니다.
 
 
-### Install JavaScript Packages
+## Install JavaScript Packages
 ```
 npm install
 ```
-### Run Frontend Server
+## Run Frontend Server
 ```
 npm run dev
 ```

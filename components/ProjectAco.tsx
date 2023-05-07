@@ -38,7 +38,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco01.PNG'
-                                    alt="slide-01"
+                                    alt="aco-01"
                                     width='800'
                                     height='500'
                                 />
@@ -47,7 +47,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco02.PNG'
-                                    alt="slide-02"
+                                    alt="aco-02"
                                     width='800'
                                     height='500'
                                 />
@@ -56,7 +56,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco03.PNG'
-                                    alt="slide-03"
+                                    alt="aco-03"
                                     width='800'
                                     height='500'
                                 />
@@ -65,7 +65,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco05.PNG'
-                                    alt="slide-05"
+                                    alt="aco-05"
                                     width='800'
                                     height='500'
                                 />
@@ -74,7 +74,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco06.PNG'
-                                    alt="slide-06"
+                                    alt="aco-06"
                                     width='800'
                                     height='500'
                                 />
@@ -83,7 +83,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco04.PNG'
-                                    alt="slide-04"
+                                    alt="aco-04"
                                     width='800'
                                     height='500'
                                 />
@@ -92,7 +92,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco07.PNG'
-                                    alt="slide-07"
+                                    alt="aco-07"
                                     width='800'
                                     height='500'
                                 />
@@ -101,7 +101,7 @@ function ProjectAco({ onModal }: props) {
                                 <Image
                                     className="portfolio__img-01"
                                     src='/porfolio_img/aco08.PNG'
-                                    alt="slide-08"
+                                    alt="aco-08"
                                     width='800'
                                     height='500'
                                 />
