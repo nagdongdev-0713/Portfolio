@@ -2,7 +2,7 @@ import { useCallback, useEffect, useRef, useState } from 'react';
 import AboutMe from '../components/AboutMe';
 import Canvas from '../components/Canvas';
 import Footer from '../components/Footer'
-import Translator from '../components/GPTTranslator'
+import Translator from '../components/Others'
 import Navbar from '../components/Navbar';
 import Project from '../components/Project';
 import Skills from '../components/Skills';
@@ -10,6 +10,7 @@ import Decommi from '../components/decommi';
 import ProjectAco from '../components/ProjectAco';
 import MyPortfolio from '../components/MyPortfolio';
 import MyBlog from '../components/MyBlog';
+import Career from '../components/Others';
 
 const Home = () => {
     const [canvas, setCanvas] = useState<number>();
@@ -21,6 +22,9 @@ const Home = () => {
 
     const canvasRef = useRef<HTMLDivElement | null>(null);
 
+    /**
+     * Modal창 스크롤 고정
+     */
     let currentScroll = 0;
     const lockScroll = useCallback(() => {
         currentScroll = window.scrollY;
@@ -40,6 +44,9 @@ const Home = () => {
     }, [currentScroll]);
     
 
+    /**
+     * Modal창 Toggle
+     */
     const onBlogModalToggle = useCallback(() => {
         setBlogModal((prev) => !prev)
         if (!blogModal) {

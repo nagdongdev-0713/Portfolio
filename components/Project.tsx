@@ -76,12 +76,12 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                             </div>
                         </div>
                     </div>
-                    {/* 배포 작업중 */}
+                    {/* Spring 하던거로 변경할것 */}
                     <div className="menu__item">
                         <button
                             className="project__menu__item-link"
                             onClick={onModal}
-                        >GPT Translator</button>
+                        >Others</button>
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
@@ -93,11 +93,11 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>GPT Translator - 000 - GPT Translator - 000 - GPT Translator - 000 - GPT Translator - 000</span>
+                                <span>Others - 000 - Others - 000 - Others - 000 - Others - 000</span>
                             </div>
                         </div>
                     </div>
-                    <div className="menu__item">
+                    {/* <div className="menu__item">
                         <button
                             className="project__menu__item-link"
                             onClick={onBlogModal}
@@ -116,7 +116,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                                 <span>My Blog - 004 - My Blog - 004 - My Blog - 004 - My Blog - 004</span>
                             </div>
                         </div>
-                    </div>
+                    </div> */}
                 </div>
             </div>
         </div>

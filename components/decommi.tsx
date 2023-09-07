@@ -237,6 +237,16 @@ const Decommi = ({ onModal }: props) => {
                             <a href="https://decommi.notion.site/Decommi-54b1b7830f8545199a9f7c912e01f4bb"
                                 target="_blank" rel="noreferrer noopener">&nbsp;&nbsp;https://decommi.notion.site/Decommi-54b1b7830f8545199a9f7c912e01f4bb</a>
                         </div>
+                        <div className="portfolio__bottom-links">
+                            <div style={{ marginTop: 25 }}>
+                                <b>Install JavaScript Packages</b>
+                            </div>
+                            <p>- npm install</p>
+                            <div style={{ marginTop: 10 }}>
+                                <b>Run Frontend Server</b>
+                            </div>
+                            <p>- npm run dev</p>
+                        </div>
                     </div>
                 </div>
             </div>

@@ -135,6 +135,16 @@ const MyPortfolio: FC<props> = ({onModal}) => {
                             <a href="https://my-portfolio-lkp8.vercel.app/"
                                 target="_blank" rel="noreferrer noopener">https://my-portfolio-lkp8.vercel.app/</a>
                         </div>
+                        <div className="portfolio__bottom-links">
+                            <div style={{ marginTop: 25 }}>
+                                <b>Install JavaScript Packages</b>
+                            </div>
+                            <p>- npm install</p>
+                            <div style={{ marginTop: 10 }}>
+                                <b>Run Frontend Server</b>
+                            </div>
+                            <p>- npm run dev</p>
+                        </div>
                     </div>
                 </div>
             </div>

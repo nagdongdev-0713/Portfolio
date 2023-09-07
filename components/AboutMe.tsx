@@ -20,8 +20,11 @@ const AboutMe = ({ canvas }: Props) => {
         // ref를 두개 선언하면 둘 다 인식이 되어 isIntersecting이 꼬인다
     }, [])
 
+    /**
+     * TEXT 좌우 이동 애니메이션
+     */
     const abScroll = useCallback(() => {
-        setAmAnime((window.scrollY - (canvas as number)) / 4)
+        setAmAnime((window.scrollY - (canvas as number)) / 3)
     }, [canvas])
 
     useEffect(() => {
@@ -86,6 +89,35 @@ const AboutMe = ({ canvas }: Props) => {
                                     </div>
                                     <div className="am-education">
                                         <p>동성직업전문학교 프론트/JAVA 풀스택 과정 수료(2022)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div className='am-about'>
+                            <div>
+                                <div className='am-career'>
+                                    <div className='iconsize'>
+                                        <span className="subtitle-text bi bi-pc"></span>
+                                    </div>
+                                    <div className='am-career__title'>
+                                        네이버시스템(주) - 프론트엔드 개발자
+                                    </div>
+                                    <div className='am-career__date'>
+                                        2023.06 ~ 2023.08 (3개월)
+                                    </div>
+                                </div>
+                                <div className='am-career-detail'>
+                                    <div className='iconsize'>
+                                        <span className="none subtitle-text bi bi-pc"></span>
+                                    </div>
+                                    <div>
+                                        · 부천시 미세먼지 포털 서비스 <br />
+                                        &nbsp; - 공업단지 비산먼지 측정 시스템 실시간 데이터 표출 및 데이터 시각화<br />
+                                        &nbsp; - 사이니지 관리 이미지 및 데이터 표출<br />
+                                        &nbsp; - OpenAPI Key 관리 시스템 쿼리튜닝<br /><br />
+                                        · 한국철도기술연구원 모니터링 시스템<br />
+                                        &nbsp; - 생물학적 유해인자 현황 쿼리튜닝 및 데이터 시각화<br />
+                                        &nbsp; - 실외공기질 측정자료 조회 데이터 표출<br />
                                     </div>
                                 </div>
                             </div>

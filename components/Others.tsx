@@ -17,7 +17,7 @@ const Translator = ({ onModal, trslModal }: props) => {
         <article className="portfolio modal">
             <div className="fixed">
                 <div className="portfolio__header">
-                    <span>GPT Translator / README.md</span>
+                    <span>Others / README.md</span>
                     <button>
                         <i className="bi bi-x portfolio__icon" onClick={onModal}></i>
                     </button>
@@ -52,14 +52,85 @@ const Translator = ({ onModal, trslModal }: props) => {
                                     height='500'
                                 />
                             </SwiperSlide>
+                            <SwiperSlide>
+                                <Image
+                                    className="portfolio__img-02"
+                                    src='/porfolio_img/springcrud.PNG'
+                                    alt="springcrud-01"
+                                    width='600'
+                                    height='318'
+                                />
+                            </SwiperSlide>
                         </Swiper>
                     </div>
                     <div className="portfolio__content">
                         <div className="portfolio__content-info">
-                            <p className="portfolio__content-info-name">chatGPT Translator(제작완료, 배포예정)</p>
+                            <p className="portfolio__content-info-name">Spring Board (CRUD)</p>
+                            <p className="portfolio__content-info-days">2023.06 · 개인 프로젝트</p>
+                            <span className="portfolio__content-info-tools">Javascript &nbsp;|&nbsp; JQuery &nbsp;|&nbsp; Java &nbsp;|&nbsp; Spring &nbsp;|&nbsp; PostgreSQL</span>
+                            <p className="portfolio__content-info-days small">
+                                <span>주요 기능:</span>
+                                <br />
+                                - 기본적인 게시판 CRUD
+                                <br />
+                                - 작성자, 제목, 내용, 작성기간에 대한 검색기능
+                                <br />
+                                - 게시글 개수에 따른 페이지네이션
+                                <br />
+                                - 조회수 카운팅
+                                <br />
+                                - 비밀번호 체크
+                            </p>
+                        </div>
+                        <div className="portfolio__content-ex">
+                            <p className="portfolio__content-ex-text">
+                                <span>
+                                Spring의 기본 기능을 학습하기 위해 JSP를 사용한 CRUD를 만들었습니다.
+                                </span>
+                                <br />
+                                <br />
+                                <span>백엔드의 작동 방식을 이해할 수 있게 되었습니다.</span>
+                                <br />
+                                    여태까지 백엔드와 프론트엔드를 전부 맡아서 프로젝트를 해본 경험이 없었는데,
+                                    이 프로젝트 덕분에 Spring의 구조를 이해하고 소스 코드를 읽을 수 있게 되었습니다.
+                                    이뿐만 아니라 여태까지 ORM을 사용하면서 쿼리문이 어떻게 작성될지 예상할 수 없어서
+                                    어려웠던 부분들이 이해가 되기 시작했다는 성취를 얻었습니다.
+                                <br />
+                                    이번 작업에서는 퍼블리싱 없이 백엔드부터 만들어 나가는 과정을 익힐 수 있었습니다.
+                                    덕분에 협업 시 전보다 수월한 커뮤니케이션을 할 수 있겠다는 생각이 들었습니다 
+                                <br />
+                            </p>
+                        </div>
+                    </div>
+                    <div className="portfolio__bottom">
+                        {/* <div className="portfolio__bottom-links">
+                            <div className='portfolio__bottom-solve'>
+                                <b>문제해결 및 메모</b>
+                            </div>
+                            <a href="https://wonderfulwonder.tistory.com/81"
+                                target="_blank" rel="noreferrer noopener">준비중</a>
+                            <br />
+                        </div> */}
+                        <div className="portfolio__bottom-links">
+                            <div style={{ marginTop: 10 }}>
+                                <b>프로젝트 Github</b>
+                            </div>
+                            <a href="https://github.com/k1k2brz/Board"
+                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/Board</a>
+                            <br />
+                            <div className="portfolio__bottom-links">
+                                <div style={{ marginTop: 25 }}>
+                                    <b>Run Eclipse Tomcat Server</b>
+                                </div>
+                                <p>- Tomcat v9.0 Server 선택 후 Start the server</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="portfolio__content">
+                        <div className="portfolio__content-info">
+                            <p className="portfolio__content-info-name">chatGPT Translator</p>
                             <p className="portfolio__content-info-days">2023.04 · 팀 프로젝트</p>
-                            <span className="portfolio__content-info-tools">Vanilla Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django</span>
-                            {/* <span className="portfolio__content-info-tools">AWS</span> */}
+                            <span className="portfolio__content-info-tools">Javascript &nbsp;|&nbsp; CSS &nbsp;|&nbsp; Django</span>
                             <p className="portfolio__content-info-days small">
                                 <span>주요 기능:</span>
                                 <br />
@@ -100,12 +171,6 @@ const Translator = ({ onModal, trslModal }: props) => {
                                 React나 Vue에서 주어지는 포맷, 컴포넌트 단위의 작성법, DOM의 변화를 직접 관리할 일이 거의 없는 것 등
                                 생산성에 많은 도움을 받고 있다는 걸 느꼈고 원리를 아는게 중요하다는 사실을 배웠습니다.
                                 <br />
-                                <br />
-                                <span>현업자와의 협업을 경험 할 수 있었습니다.</span>
-                                <br />
-                                비록 간단한 프로젝트지만 현업자와 협업을 해볼 수 있었다는 것만으로도 의미 있는 프로젝트였습니다.
-                                내가 작성한 코드에 대해 피드백을 받거나, 조심해야 될 부분과 팁을 배우면서 작업을 했기에 실력 많이 향상됨을 느꼈습니다.
-                                <br />
                             </p>
                         </div>
                     </div>
@@ -122,8 +187,8 @@ const Translator = ({ onModal, trslModal }: props) => {
                             <div style={{ marginTop: 10 }}>
                                 <b>프로젝트 Github</b>
                             </div>
-                            <a href="https://github.com/k1k2brz/gpt_translator-1"
-                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/gpt_translator-1</a>
+                            <a href="https://github.com/k1k2brz/gpt_translator"
+                                target="_blank" rel="noreferrer noopener">https://github.com/k1k2brz/gpt_translator</a>
                             <br />
                         </div>
                         <div className="portfolio__bottom-links" style={{marginTop: 10}}>
@@ -138,6 +203,17 @@ const Translator = ({ onModal, trslModal }: props) => {
                             <span>홍승식 (Backend): &nbsp;</span>
                             <a href="https://github.com/hkp1030"
                                 target="_blank" rel="noreferrer noopener">https://github.com/hkp1030</a>
+                        </div>
+                        <div className="portfolio__bottom-links">
+                            <div style={{ marginTop: 25 }}>
+                                <b>Install Django and Python Packages</b>
+                            </div>
+                            <p>- pip install --upgrade pip</p>
+                            <p>- pip install -r requirements.txt</p>
+                            <div style={{ marginTop: 10 }}>
+                                <b>Run Django Server</b>
+                            </div>
+                            <p>- python manage.py runserver</p>
                         </div>
                     </div>
                 </div>

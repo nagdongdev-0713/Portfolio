@@ -10,9 +10,11 @@ import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger';
 
 const Skills = () => {
+    /* 
+     *   Skill 타이틀 애니메이션 
+    */
     useEffect(() => {
         gsap.registerPlugin(ScrollTrigger);
-
         gsap.to(".skill__title1", {
             backgroundPositionX: "0%",
             stagger: 1,
@@ -23,20 +25,16 @@ const Skills = () => {
                 end: 'bottom 50%',
             }
         })
-
-        // gsap.registerPlugin(ScrollTrigger);
-        // gsap.to(".skill__title2", {
-        //     backgroundPositionX: "0%",
-        //     stagger: 1,
-        //     scrollTrigger: {
-        //         trigger: ".skill__title2",
-        //         scrub: 1,
-        //         start: "top 60%",
-        //         end: 'bottom 40%',
-        //     }
-        // })
-
-        gsap.registerPlugin(ScrollTrigger);
+        gsap.to(".skill__title2", {
+            backgroundPositionX: "0%",
+            stagger: 1,
+            scrollTrigger: {
+                trigger: ".skill__title2",
+                scrub: 1,
+                start: "top 60%",
+                end: 'bottom 50%',
+            }
+        })
         gsap.to(".skill__title3", {
             backgroundPositionX: "0%",
             stagger: 1,
@@ -47,8 +45,6 @@ const Skills = () => {
                 end: 'bottom 50%',
             }
         })
-        
-        gsap.registerPlugin(ScrollTrigger);
         gsap.to(".skill__title4", {
             backgroundPositionX: "0%",
             stagger: 1,
@@ -210,7 +206,7 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div>
+                    <div>
                         <div className="skill__animation">
                             <p className="skill__title2 skill__title">Backend Skills</p>
                         </div>
@@ -220,13 +216,13 @@ const Skills = () => {
                                     <div className="skill__img">
                                         <div className="skill__img-height">
                                             <Image
-                                                src={nestjs}
-                                                alt="nest.js"
+                                                src='/spring.png'
+                                                alt="spring"
                                                 width='80'
                                                 height='80'
                                             />
                                         </div>
-                                        <p className="skill__skilltext">Nest.js</p>
+                                        <p className="skill__skilltext">SpringBoot</p>
                                     </div>
                                     <div className="skill__img">
                                         <div className="skill__img-height">
@@ -253,80 +249,10 @@ const Skills = () => {
                                 </div>
                             </div>
                         </div>
-                    </div> */}
-                    <div>
-                        <div className="skill__animation">
-                            <p className="skill__title3 skill__title">Communication Skills</p>
-                        </div>
-                        <div className="skill__about">
-                            <div className="skill__img-wrapper">
-                            <div className="skill__partition">
-                                <div className="skill__mobile-partition">
-                                    <div className="skill__img">
-                                        <div className="skill__img-height">
-                                            <Image
-                                                src='/Adobe_Illustrator_CC_icon.svg.png'
-                                                alt="ai"
-                                                fill
-                                                sizes="80px, auto"
-                                            />
-                                        </div>
-                                        <p className="skill__skilltext">Illustrator</p>
-                                    </div>
-                                    <div className="skill__img">
-                                        <div className="skill__img-height">
-                                            <Image
-                                                src={Figma}
-                                                alt="Figma"
-                                                width='80'
-                                                height='80'
-                                            />
-                                        </div>
-                                        <p className="skill__skilltext">Figma</p>
-                                    </div>
-                                    <div className="skill__img">
-                                        <div className="skill__img-height">
-                                            <Image
-                                                src='/Adobe_XD_CC_icon.svg.png'
-                                                alt="xd"
-                                                fill
-                                                sizes="80px, auto"
-                                            />
-                                        </div>
-                                        <p className="skill__skilltext">XD</p>
-                                    </div>
-                                </div>
-                                <div className="skill__mobile-partition">
-                                    <div className="skill__img">
-                                        <div className="skill__img-height">
-                                            <Image
-                                                src='/Git.png'
-                                                alt="git"
-                                                width='80'
-                                                height='80'
-                                            />
-                                        </div>
-                                        <p className="skill__skilltext">Git</p>
-                                    </div>
-                                    <div className="skill__img">
-                                        <div className="skill__img-height">
-                                            <Image
-                                                src='/githubLogo.png'
-                                                alt="github"
-                                                width='80'
-                                                height='80'
-                                            />
-                                        </div>
-                                        <p className="skill__skilltext">Github</p>
-                                    </div>
-                                </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     <div>
                         <div className="skill__animation">
-                            <p className="skill__title4 skill__title">Deployment Skills</p>
+                            <p className="skill__title3 skill__title">Deployment Skills</p>
                         </div>
                         <div className="skill__about">
                             <div className="skill__img-wrapper">
@@ -352,6 +278,76 @@ const Skills = () => {
                                             />
                                         </div>
                                         <p className="skill__skilltext">AWS Lightsail</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div className="skill__animation">
+                            <p className="skill__title4 skill__title">Other Skills</p>
+                        </div>
+                        <div className="skill__about">
+                            <div className="skill__img-wrapper">
+                                <div className="skill__partition">
+                                    <div className="skill__mobile-partition">
+                                        <div className="skill__img">
+                                            <div className="skill__img-height">
+                                                <Image
+                                                    src='/Adobe_Illustrator_CC_icon.svg.png'
+                                                    alt="ai"
+                                                    fill
+                                                    sizes="80px, auto"
+                                                />
+                                            </div>
+                                            <p className="skill__skilltext">Illustrator</p>
+                                        </div>
+                                        <div className="skill__img">
+                                            <div className="skill__img-height">
+                                                <Image
+                                                    src={Figma}
+                                                    alt="Figma"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill__skilltext">Figma</p>
+                                        </div>
+                                        <div className="skill__img">
+                                            <div className="skill__img-height">
+                                                <Image
+                                                    src='/Adobe_XD_CC_icon.svg.png'
+                                                    alt="xd"
+                                                    fill
+                                                    sizes="80px, auto"
+                                                />
+                                            </div>
+                                            <p className="skill__skilltext">XD</p>
+                                        </div>
+                                    </div>
+                                    <div className="skill__mobile-partition">
+                                        <div className="skill__img">
+                                            <div className="skill__img-height">
+                                                <Image
+                                                    src='/Git.png'
+                                                    alt="git"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill__skilltext">Git</p>
+                                        </div>
+                                        <div className="skill__img">
+                                            <div className="skill__img-height">
+                                                <Image
+                                                    src='/githubLogo.png'
+                                                    alt="github"
+                                                    width='80'
+                                                    height='80'
+                                                />
+                                            </div>
+                                            <p className="skill__skilltext">Github</p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
