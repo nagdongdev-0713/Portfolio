@@ -103,7 +103,7 @@ const AboutMe = ({ canvas }: Props) => {
                                         네이버시스템(주) - 프론트엔드 개발자
                                     </div>
                                     <div className='am-career__date'>
-                                        2023.06 ~ 2023.08 (3개월)
+                                        2023.06 ~ 2023.09 (3개월)
                                     </div>
                                 </div>
                                 <div className='am-career-detail'>
@@ -118,6 +118,26 @@ const AboutMe = ({ canvas }: Props) => {
                                         · 한국철도기술연구원 모니터링 시스템<br />
                                         &nbsp; - 생물학적 유해인자 현황 쿼리튜닝 및 데이터 시각화<br />
                                         &nbsp; - 실외공기질 측정자료 조회 데이터 표출<br />
+                                    </div>
+                                </div>
+                                <div className='am-career'>
+                                    <div className='iconsize'>
+                                        <span className="subtitle-text bi bi-pc"></span>
+                                    </div>
+                                    <div className='am-career__title'>
+                                        (주)레인디어스 - 프론트엔드 개발자
+                                    </div>
+                                    <div className='am-career__date'>
+                                        2023.09 ~ 재직중
+                                    </div>
+                                </div>
+                                <div className='am-career-detail'>
+                                    <div className='iconsize'>
+                                        <span className="none subtitle-text bi bi-pc"></span>
+                                    </div>
+                                    <div>
+                                        · B2B 오픈마켓 서비스 Buybly <br />
+                                        &nbsp; - 관리자페이지 구성
                                     </div>
                                 </div>
                             </div>
