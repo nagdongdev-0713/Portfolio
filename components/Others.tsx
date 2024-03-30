@@ -59,21 +59,8 @@ const Translator = ({ onModal, trslModal }: props) => {
                         <div className="portfolio__content-ex">
                             <p className="portfolio__content-ex-text">
                                 <span>
-                                [경고!] 현재 이 프로젝트(botclient)가 공식 입장 없이 중단된 이유를 파악 중에 있으며, 소스 코드 분석 단계에 있습니다. 그러므로 정보가 충분치 않을 수 있으니 양해 부탁드립니다.
-                                </span>
-                                <br />
-                                <br />
-                                <span>(🔴:접속 불가ㅣ🟡:불안정ㅣ🟢:접속 가능ㅣ🛞:확인되지 않음)</span>
-                                <br />
-                                <br />
-                                    현재 BOTCLIENT 서버 [🔴]
-<br />
-                                    현재 DISCORD 서버 [🟢]
-<br />
-                                    현재 DISCORD.DEV 서버 [🟢]
-<br />
-                                    접속 중인 사이트의 서버 [🟢]
-                                <br />
+                                :(
+                                    </span>
                             </p>
                         </div>
                     </div>
