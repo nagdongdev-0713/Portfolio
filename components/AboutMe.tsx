@@ -88,7 +88,7 @@ const AboutMe = ({ canvas }: Props) => {
                                         <p className="none subtitle-text bi bi-mortarboard-fill"></p>
                                     </div>
                                     <div className="am-education">
-                                        <p>2024 IROC 피지컬컴퓨팅 Technical</p>
+                                        <p></p>
                                     </div>
                                 </div>
                             </div>
