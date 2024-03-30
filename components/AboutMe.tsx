@@ -103,7 +103,7 @@ const AboutMe = ({ canvas }: Props) => {
                                         WaterPLe - Backend Developer
                                     </div>
                                     <div className='am-career__date'>
-                                        2023.05 ~ 재직중
+                                        2023.05 ~ 
                                     </div>
                                 </div>
                                 <div className='am-career-detail'>
@@ -111,12 +111,12 @@ const AboutMe = ({ canvas }: Props) => {
                                         <span className="none subtitle-text bi bi-pc"></span>
                                     </div>
                                     <div>
-                                        · 기여내용 <br />
-                                        &nbsp; - WaterPLe 디스코드 서버 내 다용도 모더레이터 봇 개발<br />
-                                        &nbsp; - WaterPLe 홈페이지, Contact, page in ChatBot(openai-api) 기능 구현<br /><br />
-                                        · 서버 구축&방어 도움<br />
+                                        · 내용 <br />
+                                        &nbsp; - WATERPLE AI 챗봇&상담 봇 개발<br />
+                                        &nbsp; - WATERPLE 홈페이지, Contact 기능 개발<br /><br />
+                                        · 서버 관련<br />
                                         &nbsp; - Cloudflare DDoS Defence<br />
-                                        &nbsp; - IDC대역&Proxy&VPN Blocker<br />
+                                        &nbsp; - IDC대역&Proxy&VPN 차단<br />
                                     </div>
                                 </div>
                                 
