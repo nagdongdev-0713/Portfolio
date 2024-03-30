@@ -88,7 +88,7 @@ const AboutMe = ({ canvas }: Props) => {
                                         <p className="none subtitle-text bi bi-mortarboard-fill"></p>
                                     </div>
                                     <div className="am-education">
-                                        <p>2023 로봇올림피아드 그리스 진출권 획득</p>
+                                        <p>2024 IROC 피지컬컴퓨팅 Technical</p>
                                     </div>
                                 </div>
                             </div>
