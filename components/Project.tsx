@@ -17,10 +17,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                 </div>
                 <div className="menu">
                     <div className="menu__item">
-                        <button
-                            className="project__menu__item-link"
-                            onClick={onAcoModal}
-                        >A.C.O.</button>
+
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
@@ -30,11 +27,7 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                                 height='500'
                             />
                         </div>
-                        <div className="marquee">
-                            <div className="marquee__inner">
-                                <span>ACO - 003 - ACO - 003 - ACO - 003 - ACO - 003</span>
-                            </div>
-                        </div>
+
                     </div>
                     <div className="menu__item">
                         <button
@@ -52,15 +45,12 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Portfolio - 002 - Portfolio - 002 - Portfolio - 002 - Portfolio - 002</span>
+                                <span>Portfolio Page</span>
                             </div>
                         </div>
                     </div>
                     <div className="menu__item">
-                        <button
-                            className="project__menu__item-link"
-                            onClick={onDecommiModal}
-                        >Decommi</button>
+                        
                         <div className="menu__item-img">
                             <Image
                                 className="menu__item-img-border"
@@ -81,19 +71,13 @@ const Project = ({ onModal, onDecommiModal, onAcoModal, onPortfolioModal, onBlog
                         <button
                             className="project__menu__item-link"
                             onClick={onModal}
-                        >Others</button>
+                        >DotClient</button>
                         <div className="menu__item-img">
-                            <Image
-                                className="menu__item-img-border"
-                                src='/porfolio_img/gpttranslator.PNG'
-                                alt="gpt-01"
-                                width='800'
-                                height='500'
-                            />
+ 
                         </div>
                         <div className="marquee">
                             <div className="marquee__inner">
-                                <span>Others - 000 - Others - 000 - Others - 000 - Others - 000</span>
+                                <span>DotClient</span>
                             </div>
                         </div>
                     </div>

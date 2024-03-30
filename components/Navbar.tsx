@@ -28,7 +28,7 @@ const Navbar = () => {
     <div className={fix ? 'nav__container__fixed' : 'nav__container'}>
       <div className="nav__wrapper">
         <div className="nav__left">
-          <div className="nav__name" onClick={() => scrollTo(0, 0)}>Portfolio</div>
+          <div className="nav__name" onClick={() => scrollTo(0, 0)}>Yeonwoo Lee's Portfolio</div>
         </div>
         <div className="nav__right">
           <div className="nav__list">

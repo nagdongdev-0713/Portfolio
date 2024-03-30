@@ -122,17 +122,7 @@ const Skills = () => {
                                             </div>
                                             <p className="skill__skilltext">React</p>
                                         </div>
-                                        <div className="skill__img">
-                                            <div className="skill__img-height">
-                                                <Image
-                                                    src='/redux.png'
-                                                    alt="redux"
-                                                    fill
-                                                    sizes="80px, auto"
-                                                />
-                                            </div>
-                                            <p className="skill__skilltext">Redux</p>
-                                        </div>
+
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
@@ -144,17 +134,7 @@ const Skills = () => {
                                             </div>
                                             <p className="skill__skilltext">Vue</p>
                                         </div>
-                                        <div className="skill__img">
-                                            <div className="skill__img-height">
-                                                <Image
-                                                    src='/vuex.png'
-                                                    alt="VUEX"
-                                                    fill
-                                                    sizes="80px, auto"
-                                                />
-                                            </div>
-                                            <p className="skill__skilltext">Vuex</p>
-                                        </div>
+
                                     </div>
                                 </div>
                                 <div className="skill__partition">
@@ -168,17 +148,7 @@ const Skills = () => {
                                             </div>
                                             <p className="skill__skilltext">Next.js</p>
                                         </div>
-                                        <div className="skill__img">
-                                            <div className="skill__img-height">
-                                                <Image
-                                                    src='/sass.png'
-                                                    alt="SASS"
-                                                    fill
-                                                    sizes="auto"
-                                                />
-                                            </div>
-                                            <p className="skill__skilltext">SASS</p>
-                                        </div>
+                                        
                                         <div className="skill__img">
                                             <div className="skill__img-height">
                                                 <Image
@@ -191,15 +161,8 @@ const Skills = () => {
                                             <p className="skill__skilltext">Bootstrap</p>
                                         </div>
                                         <div className="skill__img">
-                                            <div className="skill__img-height">
-                                                <Image
-                                                    src='/tailwind.png'
-                                                    alt="tailwindcss"
-                                                    fill
-                                                    sizes="80px, auto"
-                                                />
-                                            </div>
-                                            <p className="skill__skilltext">TailwindCSS</p>
+
+
                                         </div>
                                     </div>
                                 </div>
@@ -311,19 +274,9 @@ const Skills = () => {
                                                     height='80'
                                                 />
                                             </div>
-                                            <p className="skill__skilltext">Figma</p>
+                                            <p className="skill__skilltext">Premire Pro</p>
                                         </div>
-                                        <div className="skill__img">
-                                            <div className="skill__img-height">
-                                                <Image
-                                                    src='/Adobe_XD_CC_icon.svg.png'
-                                                    alt="xd"
-                                                    fill
-                                                    sizes="80px, auto"
-                                                />
-                                            </div>
-                                            <p className="skill__skilltext">XD</p>
-                                        </div>
+                                        
                                     </div>
                                     <div className="skill__mobile-partition">
                                         <div className="skill__img">
