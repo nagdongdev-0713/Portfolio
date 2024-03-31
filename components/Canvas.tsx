@@ -11,7 +11,7 @@ const Canvas = () => {
                 </div>
                 <div className='cav__img-container'>
                     <img src="/profile/profile.jpg" alt="profile" className="cav__photo" />
-		    <p className="cav__p">Super Thanks: <a href="https://www.instagram.com/m.in._ji914">@m.in._ji914</a></p>
+		    
                 </div>
             </div>
         </div>
