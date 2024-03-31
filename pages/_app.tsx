@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>
-          이태일 포트폴리오
+          이연우 포트폴리오
         </title>
         <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
         <meta content="이태일 포트폴리오" />
